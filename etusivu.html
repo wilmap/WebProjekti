@@ -2,112 +2,421 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Paasivu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Etusivu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/etusivu_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=
+    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="box-area">
-    <header>
-        <img class="logo" src="img/basket.svg" alt="basket logo">
-
-        <div class="search-box">
-            <input class="search-txt" type="text" id="searchbar" placeholder="Etsi tuotteita">
-            <a class="search-btn" href="#">
-                <img src="img/search.svg" alt="search logo">
-            </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbutton">Tuotteet</button>
-            <div class="dropdown-content">
-                <a href="vaatesivu.html" >Vaatteet</a>
-                <a href="kauneussivu.html" >Kauneus</a>
-                <a href="sisustussivu.html" >Sisustus</a>
-            </div>
-        </div>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="etusivu.html" >Etusivu</a></li>
-                <li><a href="ehdotukset.html" >Ehdotukset</a></li>
-                <li><a href="kartta.html" >Kartta</a></li>
-                <li><a href="yhteystiedot.html" >Yhteystiedot</a></li>
-            </ul>
-        </nav>
-
-    </header>
-        <div class="banner-area">
-            <h2>Welcome</h2>
-        </div>
-        <div class="content-area">
-            <div class="wrapper">
-                <h2>Eettisesti laadukasta</h2>
-                <p> (Esim) Kaikkien blabla:n sivuston kautta myytävien tuotteiden laatu ja eettisyys on taattu.
-                    Kaikilla tuotteilla on Fairtrade, sekä Öko-Tex®-standardi 100 sertifikaatti. Mitään ei ole
-                    testattu eläimillä ja niiden valmistukseen on käytetty
-                    ainoastaan hyvin kompensoitua vapaaehtoista työvoimaa. Blabla lahjoittaa jokaisesta kokonaisostoksen
-                    määrästä 2% hyväntekeväisyyteen,
-                    joka muuttuu kuukausittain. Voit saada äänesi kuulolle, ja käydä äänestämässä
-                    seuraavaa hyväntekeväisyyttä osoitteessa blabla.poll.com</p>
-            </div>
-
-            <div class ="slider">
-               <div class="slides">
-                   <input type="radio" name="radio-btn" id="radio1">
-                   <input type="radio" name="radio-btn" id="radio2">
-                   <input type="radio" name="radio-btn" id="radio3">
-                   <input type="radio" name="radio-btn" id="radio4">
-
-                   <div class="slide first">
-                       <img src="slide_1.jpg" alt="">
-                   </div>
-                   <div class="slide">
-                       <img src="slide_2.jpg" alt="">
-                   </div>
-                   <div class="slide">
-                       <img src="slide_3.jpg" alt="">
-                   </div>
-                   <div class="slide">
-                       <img src="slide_4.jpg" alt="">
-                   </div>
-
-                   <div class="navigation-auto">
-                       <div class="auto-btn1"></div>
-                       <div class="auto-btn2"></div>
-                       <div class="auto-btn3"></div>
-                       <div class="auto-btn4"></div>
-                   </div>
-
-               </div>
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" width="125px" alt="store logo">
                 </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <div class="dropdown">
+                            <button class="dropbutton">Tuotteet
+                                <i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="tuotteet.html" >Kaikki tuotteet</a>
+                                <a href="vaatesivu.html" >Vaatteet</a>
+                                <a href="kauneussivu.html" >Kauneus</a>
+                                <a href="sisustussivu.html" >Sisustus</a>
+                            </div>
+                        </div>
+                        <li><a href="etusivu.html">Etusivu</a></li>
+                        <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                        <li><a href="kartta.html">Kartta</a></li>
+                        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                        <li><a href="">Tili</a></li>
+                    </ul>
+                </nav>
+                <a href="ostoskori.html">
+                    <img alt="" src="img/cart.png" width=30px" height="30px">
+                </a>
+                <img src="img/menu.png" class="menu-icon" alt=""
+                onclick="menutoggle()">
             </div>
 
             <div class="row">
-                <div class="column">
-                    <img src="img/paita_1.jpg" alt="search logo" style="width: 100%">
+                <div class="col-2">
+                    <h1>Kevään uutuudet ovat nyt täällä!<br> 2021 kevät</h1>
+                    <p>Nulla id orci pulvinar, ultricies libero ut, pellentesque massa.
+                        Mauris euismod eleifend nunc id fermentum. Duis placerat,
+                        mauris tempus vehicula posuere, massa nunc faucibus justo, id
+                        semper sem dolor et nisi. Quisque id auctor nibh. Pellentesque
+                        tortor sem, vestibulum vitae arcu ut, viverra ullamcorper libero.
+                    </p>
+                    <a href="" class="btn">Lue lisää kevään eduista &#8594;</a>
                 </div>
-                <div class="column">
-                    <img src="img/paita_2.jpg" alt="search logo" style="width: 100%">
-                </div>
-                <div class="column">
-                    <img src="img/kengät_1.jpg" alt="search logo" style="width: 100%">
-                </div>
-                <div class="column">
-                    <img src="img/kengät_2.jpg" alt="search logo" style="width: 100%">
+                <div class="col-2">
+                    <img src="img/womanO.png" alt="" width="100%">
                 </div>
             </div>
+        </div>
+    </div>
+    <div class ="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
 
+            <div class="slide first">
+                <img src="slide_1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slide_2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slide_3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slide_4.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <!--- Featured categories --->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Featured products --->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/product-1.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-2.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-3.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-4.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/product-5.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-6.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-7.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-8.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/product-9.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-10.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-11.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-12.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50.00€</p>
+            </div>
+        </div>
+    </div>
+    <!--- offer --->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/exclusive.png" class="offer-img" alt="">
+                </div>
+                <div class="col-2">
+                    <p>Vain rajoitettu erä</p>
+                    <h1>Smart Band 4</h1>
+                    <small>Nulla id orci pulvinar, ultricies libero ut, pellentesque massa.
+                        Mauris euismod eleifend nunc id fermentum. Duis placerat, mauris tempus vehicula
+                        mcorper libero.</small>
+                    <a href="" class="btn">Lisää koriin&#8594;</a>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-
-
+    <!--- testimonial --->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> The Mi Smart Band 4 features a 39.9% larger
+                        (than Mi Band 3) AMOLED color full-touch display with
+                        adjustable brightness, so everything is clear as can
+                        be.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="img/user-1.png">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> The Mi Smart Band 4 features a 39.9% larger
+                        (than Mi Band 3) AMOLED color full-touch display with
+                        adjustable brightness, so everything is clear as can
+                        be.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="img/user-2.png">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> The Mi Smart Band 4 features a 39.9% larger
+                        (than Mi Band 3) AMOLED color full-touch display with
+                        adjustable brightness, so everything is clear as can
+                        be.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="img/user-3.png">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--- merkit --->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/logo-patagonia.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- Footer --------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Lataa bla bla sovellus</h3>
+                    <p>Lataa sovellus Apple tai Play Storesta</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png" alt="">
+                    <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+                        sem ut iaculis vulputate.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Lisää meistä</h3>
+                    <ul>
+                        <li>Kupongit</li>
+                        <li>Blogi</li>
+                        <li>Palautusoikeudet</li>
+                        <li>Hyväntekeväisyys</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Seuraa meitä somessa</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
+        </div>
+    </div>
+<!--- js for toggle menu --->
     <script
+
+
         src="js/etusivu.js">
+
+
     </script>
 </body>
 </html>

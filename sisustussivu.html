@@ -8,32 +8,39 @@
 </head>
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
-    <header>
-        <img class="logo" src="img/basket.svg" alt="basket logo">
-
-        <div class="search-box">
-            <input class="search-txt" type="text" id="searchbar" placeholder="Etsi tuotteita">
-            <a class="search-btn" href="#">
-                <img src="img/search.svg" alt="search logo">
-            </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbutton">Tuotteet</button>
-            <div class="dropdown-content">
-                <a href="vaatesivu.html" >Vaatteet</a>
-                <a href="kauneussivu.html" >Kauneus</a>
-                <a href="sisustussivu.html" >Sisustus</a>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125px" alt="store logo">
             </div>
+            <nav>
+                <ul id="MenuItems">
+                    <div class="dropdown">
+                        <button class="dropbutton">Tuotteet
+                            <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="tuotteet.html" >Kaikki tuotteet</a>
+                            <a href="vaatesivu.html" >Vaatteet</a>
+                            <a href="kauneussivu.html" >Kauneus</a>
+                            <a href="sisustussivu.html" >Sisustus</a>
+                        </div>
+                    </div>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                    <li><a href="kartta.html">Kartta</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li><a href="">Tili</a></li>
+                </ul>
+            </nav>
+            <a href="ostoskori.html">
+                <img alt="" src="img/cart.png" width=30px" height="30px">
+            </a>
+            <img src="img/menu.png" class="menu-icon" alt=""
+                 onclick="menutoggle()">
         </div>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="etusivu.html" >Etusivu</a></li>
-                <li><a href="ehdotukset.html" >Ehdotukset</a></li>
-                <li><a href="kartta.html" >Kartta</a></li>
-                <li><a href="yhteystiedot.html" >Yhteystiedot</a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+</div>
 <!-- Tästä loppuu "navigaatio koodi" -->
 <script>
 
