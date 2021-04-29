@@ -5,6 +5,10 @@
     <title>Kartta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/etusivu_style.css">
+    <link rel="stylesheet" href="css/kartta.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=
+      Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
@@ -42,9 +46,27 @@
   </div>
 </div>
 <!-- Tästä loppuu "navigaatio koodi" -->
-<script>
+<!--Tästä alkaa sään koodi-->
+  <div class="card">
+    <div class="search_weather">
+      <input type="text" class="search_bar_weather" placeholder="Hae kaupunkia">
+      <button id="hakunappi">Hae</button>
+    </div>
+  </div>
+  <div class="weather loading">
+    <h2 class="city">Weather in Helsinki </h2>
+    <div class="temp">10°C</div>
 
-</script>
+    <div class = "flex">
+      <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="icon">
+      <div class="description">Pilvinen</div>
+    </div>
+
+    <div class="wind">Tuuli: km/h</div>
+  </div>
+</div>
+
+<script src="./js/kartta.js"></script>
 
 </body>
 </html>
