@@ -3,80 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <title>Vaatesivu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vaate_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=
+    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<!-- Tästä alkaa "navigaatio koodi" -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo.png" width="125px" alt="store logo">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <div class="dropdown">
-                            <button class="dropbutton">Tuotteet
-                                <i class="fa fa-caret-down"></i></button>
-                            <div class="dropdown-content">
-                                <a href="tuotteet.html" >Kaikki tuotteet</a>
-                                <a href="vaatesivu.html" >Vaatteet</a>
-                                <a href="kauneussivu.html" >Kauneus</a>
-                                <a href="sisustussivu.html" >Sisustus</a>
-                            </div>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125px" alt="store logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <div class="dropdown">
+                        <button class="dropbutton">Tuotteet
+                            <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="tuotteet.html" >Kaikki tuotteet</a>
+                            <a href="vaatesivu.html" >Vaatteet</a>
+                            <a href="kauneussivu.html" >Kauneus</a>
+                            <a href="sisustussivu.html" >Sisustus</a>
                         </div>
-                        <li><a href="etusivu.html">Etusivu</a></li>
-                        <li><a href="ehdotukset.html">Ehdotukset</a></li>
-                        <li><a href="kartta.html">Kartta</a></li>
-                        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                        <li><a href="">Tili</a></li>
-                    </ul>
-                </nav>
-                <a href="ostoskori.html">
-                    <img alt="" src="img/cart.png" width=30px" height="30px">
-                </a>
-                <img src="img/menu.png" class="menu-icon" alt=""
-                     onclick="menutoggle()">
+                    </div>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                    <li><a href="kartta.html">Kartta</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li><a href="">Tili</a></li>
+                </ul>
+            </nav>
+            <a href="ostoskori.html">
+                <img alt="" src="img/cart.png" width=30px" height="30px">
+            </a>
+            <img src="img/menu.png" class="menu-icon" alt=""
+                 onclick="menutoggle()">
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <h1>Tervetuloa vaatemallistoon<br> 2021!</h1>
+                <p>Kukapa meistä ei haluaisi pukeutua vain vastuullisesti tuotettuihin vaatteisiin?
+                    <br>Meidän vaatteiden valmistuksessa on käytetty eettisiä ja ekologisia tuotantomenetelmiä.
+                    <br>
+                    <br>Valikoimastamme löytyy laaja skaala erilaisia ja eri tarkoitukseen tarkoitettuja vaatteita.
+                    <br>Kiitos, kun valitsit meidät ja tervetuloa shoppailemaan!
+                </p>
+                <a href="" class="btn">Lue lisää kevään eduista &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="img/fashion-5320934_1280.jpg" alt="" width="100%">
             </div>
         </div>
     </div>
-<!-- Tästä loppuu "navigaatio koodi" -->
-<!--
-kommentoin väliaikaisesti pois kun tulee hieman rumasti kaiken päälle tällä hetkellä
-<div class="banner-area">
-    <h2>Welcome</h2>
 </div>
---->
+<div class ="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
 
-<div class="content-area">
-    <div class="wrapper">
 
-        <h2>Eettisesti laadukkaita vaatteita</h2>
-        <p> Nämä vaatteet on tuotettu kdijdijojodijjidjidfgrouyfdbhsnjamksbhuhijsmknjupiuhudfnhduhduhihih.</p>
-        <img src="img/photo-1556905055-8f358a7a47b2.jpeg" alt="search logo" style="width: 60%">
+        <div class="slide first">
+            <img src="woman-5679927_1920.jpg" alt="Kuva">
+        </div>
+        <div class="slide">
+            <img src="freestocks-_3Q3tsJ01nc-unsplash.jpg" alt="Kuva">
+        </div>
+        <div class="slide">
+            <img src="hannah-morgan-ycVFts5Ma4s-unsplash.jpg" alt="Kuva">
+        </div>
+        <div class="slide">
+            <img src="s-o-c-i-a-l-c-u-t-aXJdmnxauwY-unsplash.jpg" alt="Kuva">
+        </div>
+
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
     </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+</div>
+
+
+
+<!--- Featured categories --->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="img/alyssa-strohmann-Af3GEg0DMEw-unsplash.jpg" alt="Kuva">
+            </div>
+            <div class="col-3">
+                <img src="img/emma-matthews-digital-content-production-HLaMNN-oDCA-unsplash.jpg" alt="Kuva">
+            </div>
+            <div class="col-3">
+                <img src="img/sindy-sussengut-HyLarPRpkH8-unsplash.jpg" alt="Kuva">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--- Featured products --->
+
+<div class="small-container">
+    <h2 class="title">Vaatteet</h2>
     <div class="row">
-        <div class="column">
-            <img src="img/takkipunainen.jpeg" alt="search logo" style="width: 100%">
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/ussama.jpg" alt="">
+            <h4>Kukka mekko</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>39.99€</p>
         </div>
-        <div class="column">
-            <img src="img/mekko.jpeg" alt="search logo" style="width: 100%">
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/waldo-kleyn-2bMHWCLfqRs-unsplash.jpg" alt="">
+            <h4>Huppari</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>20.00€</p>
         </div>
-        <div class="column">
-            <img src="img/uikkarit.jpeg" alt="search logo" style="width: 100%">
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/milada-vigerova-p8Drpg_duLw-unsplash.jpg" alt="">
+            <h4>Poncho</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>80.00€</p>
         </div>
-        <div class="column">
-            <img src="img/takki.jpeg" alt="search logo" style="width: 100%">
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/jonathan-borba-nwWwKayvjmg-unsplash.jpg" alt="">
+            <h4>Kokouimapuku</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>32.50€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/guillaume-bleyer-SXiIe1Vs5BU-unsplash.jpg" alt="">
+            <h4>Pitsinen pitkähihainen paita</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>21.00€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/dollar-gill-DBQ3Y72ZFBQ-unsplash.jpg" alt="">
+            <h4>Punainen haalari</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>63.99€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/cobro--_cS2kp5hEo-unsplash.jpg" alt="">
+            <h4>Harmaa takki</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>99.99€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/nojan-namdar-a3RhaDG_pNM-unsplash.jpg" alt="">
+            <h4>Sininen puvuntakki</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>150.00€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/leilani-angel-K84vnnzxmTQ-unsplash.jpg" alt="">
+            <h4>T-paita</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>15.00€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/taylor-brandon-gHQL9hg7Sfk-unsplash.jpg" alt="">
+            <h4>Vihreä hame</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-0"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>45.99€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/luobulinka-FO4mQZi1c0M-unsplash.jpg" alt="">
+            <h4>Vaaleanpunainen mekko</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>66.00€</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Vaatevalikoima/ahmed-carter-tiWcNvpQF4E-unsplash.jpg" alt="">
+            <h4>Housut</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>10.00€</p>
         </div>
     </div>
 </div>
 
+<!--- offer --->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/Vaatevalikoima/md-salman-tWOz2_EK5EQ-unsplash.jpg" class="offer-img" alt="">
+            </div>
+            <div class="col-2">
+                <p>Erikoistarjous</p>
+                <h1>6 Paitaa 30.00€</h1>
+                <small>Nyt erikoiserä mukavia puuvilla t-paitoja.<br>
+                    Kuuden t-paidan setti vain 30 euroa!<br>
+                    Värit: punainen, musta, valkoinen, sininen, tummanpunainen ja keltainen.</small> <br>
+                <a href="" class="btn">Lisää koriin&#8594;</a>
+            </div>
 
+        </div>
+    </div>
+</div>
 
-<script>
+<!--- testimonial --->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p> The Mi Smart Band 4 features a 39.9% larger
+                    (than Mi Band 3) AMOLED color full-touch display with
+                    adjustable brightness, so everything is clear as can
+                    be.
+                </p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="img/user-1.png">
+                <h3>Sean Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p> The Mi Smart Band 4 features a 39.9% larger
+                    (than Mi Band 3) AMOLED color full-touch display with
+                    adjustable brightness, so everything is clear as can
+                    be.
+                </p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Mike Smith</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p> The Mi Smart Band 4 features a 39.9% larger
+                    (than Mi Band 3) AMOLED color full-touch display with
+                    adjustable brightness, so everything is clear as can
+                    be.
+                </p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="img/user-3.png">
+                <h3>Mabel Joe</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--- merkit --->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/logo-patagonia.png">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------- Footer --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Lataa bla bla sovellus</h3>
+                <p>Lataa sovellus Apple tai Play Storesta</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo-white.png" alt="">
+                <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+                    sem ut iaculis vulputate.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Lisää meistä</h3>
+                <ul>
+                    <li>Kupongit</li>
+                    <li>Blogi</li>
+                    <li>Palautusoikeudet</li>
+                    <li>Hyväntekeväisyys</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Seuraa meitä somessa</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
+    </div>
+</div>
+<!--- js for toggle menu --->
+<script
+        src="js/etusivu.js">
 
 </script>
-
 </body>
 </html>
