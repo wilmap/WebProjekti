@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Yhteystiedot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/etusivu_style.css">
+    <link rel="stylesheet" href="css/yhteystiedot_style.css">
 </head>
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
+
 <div class="header">
   <div class="container">
     <div class="navbar">
@@ -42,6 +43,90 @@
   </div>
 </div>
 <!-- Tästä loppuu "navigaatio koodi" -->
+
+<!-- lomake-->
+<div class="container1">
+  <div style="text-align:center">
+    <h2>Ota meihin yhteyttä</h2><br>
+    <p>Lähetä meille viesti (palautukset, palaute, muut asiat):</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="kirjoita.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Etunimi:</label>
+        <input type="text" id="fname" name="etunimi" placeholder="Nimesi..">
+        <label for="lname">Sukunimi</label>
+        <input type="text" id="lname" name="sukunimi" placeholder="Sukunimesi..">
+        <label for="country">Maa</label>
+        <select id="country" name="Maa">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="suomi">Suomi</option>
+          <option value="ruotsi">Ruotsi</option>
+          <option value="norja">Norja</option>
+        </select>
+        <label for="subject">Viesti</label>
+        <textarea id="subject" name="subject" placeholder="Kirjoita jotain.." style="height:170px"></textarea>
+        <input type="submit" value="Lähetä">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container1">
+<h2>Yritystiedot</h2><br>
+  <p>RedStore Oy</p>
+  <p>Aleksanterinkatu 123, 00100 Helsinki (toimiston osoite)</p>
+  <p>Email: redstore@gmail.com</p>
+  <p>Puhelimitse: 023846289</p>
+  <p>Y-tunnus 10808545424-8</p>
+</div>
+
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Lataa bla bla sovellus</h3>
+        <p>Lataa sovellus Apple tai Play Storesta</p>
+        <div class="app-logo">
+          <img src="img/play-store.png">
+          <img src="img/app-store.png">
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="img/logo-white.png" alt="">
+        <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+          sem ut iaculis vulputate.</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Lisää meistä</h3>
+        <ul>
+          <li>Kupongit</li>
+          <li>Blogi</li>
+          <li>Palautusoikeudet</li>
+          <li>Hyväntekeväisyys</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Seuraa meitä somessa</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
+  </div>
+</div>
+
 <script>
 
 </script>
