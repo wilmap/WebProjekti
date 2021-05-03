@@ -11,7 +11,7 @@ let weather = {
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
-    //Haetaa halutut parametrit (kaupunki, sääkuvake, kuvaus, lämpötila ja tuuli) datasta.
+    //Haetaan halutut parametrit (kaupunki, sääkuvake, kuvaus, lämpötila ja tuuli) datasta.
     displayWeather: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
@@ -21,7 +21,7 @@ let weather = {
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp.toFixed(0) + "°C";
-        document.querySelector(".wind").innerText = "Wind speed: " + speed + "km/h";
+        document.querySelector(".wind").innerText = "Wind speed: " + speed.toFixed() + "km/h";
         document.querySelector(".weather").classList.remove("loading");
     },
     //Tehdään funktio haulle. Haetaan haluttu kaupunki hakukentästä
