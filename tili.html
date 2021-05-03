@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tili</title>
+    <link rel="stylesheet" href="css/tili.css">
+</head>
+<body>
+
+<!-- Tästä alkaa "navigaatio koodi" -->
+
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" width="125px" alt="store logo">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <div class="dropdown">
+            <button class="dropbutton">Tuotteet
+              <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="tuotteet.html" >Kaikki tuotteet</a>
+              <a href="vaatesivu.html" >Vaatteet</a>
+              <a href="kauneussivu.html" >Kauneus</a>
+              <a href="sisustussivu.html" >Sisustus</a>
+            </div>
+          </div>
+          <li><a href="etusivu.html">Etusivu</a></li>
+          <li><a href="ehdotukset.html">Ehdotukset</a></li>
+          <li><a href="kartta.html">Kartta</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li><a href="tili.html">Tili</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li class="cart">
+          <a href="ostoskori.html">
+            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+          </a>
+
+        </li>
+      </ul>
+      <img src="img/menu.png" class="menu-icon" alt=""
+           onclick="menutoggle()">
+    </div>
+  </div>
+</div>
+<!-- Tästä loppuu "navigaatio koodi" -->
+
+<h2>Kirjaudu sisään tilillesi</h2>
+<br>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img  class="avatar" src="img/avatar.jpeg" alt="Avatar kuva">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Käyttäjätunnus</b></label>
+      <input type="text" placeholder="Kirjoita käyttäjätunnus" name="uname" required>
+
+      <label for="psw"><b>Salasana</b></label>
+      <input type="password" placeholder="Kirjoita salasana" name="psw" required>
+
+      <button type="submit">Login </button>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Muista minut
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+<img  class="kuva1 "src="img/kelly-sikkema-LNlzd-Y7orw-unsplash.jpg" alt="Kuva puhelimesta" >
+
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Lataa bla bla sovellus</h3>
+        <p>Lataa sovellus Apple tai Play Storesta</p>
+        <div class="app-logo">
+          <img src="img/play-store.png">
+          <img src="img/app-store.png">
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="img/logo-white.png" alt="">
+        <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+          sem ut iaculis vulputate.</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Lisää meistä</h3>
+        <ul>
+          <li>Kupongit</li>
+          <li>Blogi</li>
+          <li>Palautusoikeudet</li>
+          <li>Hyväntekeväisyys</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Seuraa meitä somessa</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
+  </div>
+</div>
+
+<script>
+
+  / Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+
+</body>
+</html>
