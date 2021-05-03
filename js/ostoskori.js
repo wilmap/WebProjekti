@@ -104,7 +104,6 @@ function cartNumbers(product, action){
 /* Asettaa tuotteet tietoihin */
 
 function setItems(product){
-    console.log(product.tag)
 
     let cartItems = localStorage.getItem('productsInCart')
     cartItems = JSON.parse(cartItems)
@@ -150,7 +149,6 @@ function displayCart(){
     let cartItems = localStorage.getItem('productsInCart')
     cartItems = JSON.parse(cartItems)
     let productContainer = document.querySelector(".products")
-
     if(cartItems && productContainer){
         productContainer.innerHTML = ''
         Object.values(cartItems).map(item => {

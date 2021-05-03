@@ -7,11 +7,40 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    padding-top: 65px;
 
 }
 
+section {
+
+}
+section .scroll{
+    width: 100%;
+    display: flex;
+}
+section .scroll div{
+    margin-top: 10px;
+    color: #000;
+    font-size: 10px;
+    background: #fff;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+
 }
 .header .row{
     margin-top: 70px;
@@ -66,12 +95,24 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    background-color: rgba(255, 255, 255, 1);
 
 }
 
 nav{
     flex: 1;
     text-align: right;
+
+}
+
+.cart{
+    float:left;
+
 }
 
 nav ul{
@@ -616,6 +657,7 @@ input:focus{
     align-items: center;
 }
 
+
 .products{
     width: 100%;
     display: flex;
@@ -643,6 +685,35 @@ input:focus{
 
 .cartName{
     opacity: 1;
+}
+
+/* Tuotetiedot */
+
+.products-containerInfo{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 50px auto 0;
+}
+
+.productInfo{
+    width: 45%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.productsInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgInfo{
+    width: 300px;
+}
+
+.nameInfo{
+    font-weight: bold;
 }
 
 /*---------Slider  ---------*/
@@ -767,6 +838,9 @@ input:focus{
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
+    }
+    nav{
+        text-align: right;
     }
     nav ul li{
         display: block;
