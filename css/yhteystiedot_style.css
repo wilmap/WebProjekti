@@ -98,6 +98,11 @@ p{
     color: #555;
     text-align: center;
 }
+.btnsend {
+    background-color: #e799da;
+    height: 30px;
+    width: 60px;
+}
 
 .container{
     max-width: 1300px;
