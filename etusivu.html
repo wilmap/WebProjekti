@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
+    <div class="headerFrontpage">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -38,9 +38,14 @@
                         <li><a href="">Tili</a></li>
                     </ul>
                 </nav>
-                <a href="ostoskori.html">
-                    <img alt="" src="img/cart.png" width=30px" height="30px">
-                </a>
+                <ul>
+                    <li class="cart">
+                        <a href="ostoskori.html">
+                            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        </a>
+
+                    </li>
+                </ul>
                 <img src="img/menu.png" class="menu-icon" alt=""
                 onclick="menutoggle()">
             </div>
@@ -116,11 +121,11 @@
     <!--- Featured products --->
 
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+        <h2 class="title">Tämän hetken suosikit</h2>
         <div class="row">
             <div class="col-4">
-                <img src="img/product-1.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/pamupunainent-paita.jpg" alt="">
+                <h4>Pamu Punainen T-Paita</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -131,8 +136,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-2.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/jeasonkello.jpg" alt="">
+                <h4>Jeason Kello</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -143,8 +148,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-3.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/pamumustat-paita.jpg" alt="">
+                <h4>Pamu Musta T-Paita</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -155,8 +160,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-4.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/harmaatlenkkarit.jpg" alt="">
+                <h4>Harmaat Lenkkarit</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -167,11 +172,11 @@
                 <p>50.00€</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
+        <h2 class="title">Uutuudet</h2>
         <div class="row">
             <div class="col-4">
-                <img src="img/product-5.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/harmaatverryttelyhousut.jpg" alt="">
+                <h4>Harmaat Verryttelyhousut</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -182,8 +187,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-6.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/pamusininent-paita.jpg" alt="">
+                <h4>Pamu Sininen T-Paita</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -194,8 +199,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-7.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/mustatlenkkarit.jpg" alt="">
+                <h4>Mustat Lenkkarit</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -206,8 +211,8 @@
                 <p>50.00€</p>
             </div>
             <div class="col-4">
-                <img src="img/product-8.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="img/hrxsukat.jpg" alt="">
+                <h4>HRX Sukat</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -411,12 +416,8 @@
         </div>
     </div>
 <!--- js for toggle menu --->
-    <script
+    <script src="js/etusivu.js"></script>
 
-
-        src="js/etusivu.js">
-
-
-    </script>
+    <script src="js/ostoskori.js"></script>
 </body>
 </html>

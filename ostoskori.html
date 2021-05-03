@@ -13,116 +13,61 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="img/logo.png" width="125px" alt="store logo">
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <div class="dropdown">
-                        <button class="dropbutton">Tuotteet
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" width="125px" alt="store logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <div class="dropdown">
+                            <button class="dropbutton">Tuotteet
                             <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="tuotteet.html" >Kaikki tuotteet</a>
-                            <a href="vaatesivu.html" >Vaatteet</a>
-                            <a href="kauneussivu.html" >Kauneus</a>
-                            <a href="sisustussivu.html" >Sisustus</a>
+                            <div class="dropdown-content">
+                                <a href="tuotteet.html" >Kaikki tuotteet</a>
+                                <a href="vaatesivu.html" >Vaatteet</a>
+                                <a href="kauneussivu.html" >Kauneus</a>
+                                <a href="sisustussivu.html" >Sisustus</a>
+                            </div>
                         </div>
-                    </div>
-                    <li><a href="etusivu.html">Etusivu</a></li>
-                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
-                    <li><a href="kartta.html">Kartta</a></li>
-                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                    <li><a href="">Tili</a></li>
+                        <li><a href="etusivu.html">Etusivu</a></li>
+                        <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                        <li><a href="kartta.html">Kartta</a></li>
+                        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                        <li><a href="">Tili</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li class="cart">
+                        <a href="ostoskori.html">
+                            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <a href="ostoskori.html">
-                <img alt="" src="img/cart.png" width=30px" height="30px">
-            </a>
-            <img src="img/menu.png" class="menu-icon" alt=""
+                <img src="img/menu.png" class="menu-icon" alt=""
                  onclick="menutoggle()">
+            </div>
         </div>
     </div>
-</div>
 
 <!--- ostoskorin tiedot ---->
 
-<div class="small-container cart-page">
-    <table>
-        <tr>
-            <th>Tuote</th>
-            <th>Määrä</th>
-            <th>Yhteensä</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="img/buy-1.jpg" alt="">
-                    <div>
-                        <p>Red Printed T-Shirt</p>
-                        <small>Hinta: 50.00€</small>
-                        <br>
-                        <a href="">Poista</a>
-                    </div>
-
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>50.00€</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="img/buy-2.jpg" alt="">
-                    <div>
-                        <p>Red Printed T-Shirt</p>
-                        <small>Hinta: 70.00€</small>
-                        <br>
-                        <a href="">Poista</a>
-                    </div>
-
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>70.00€</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="img/buy-3.jpg" alt="">
-                    <div>
-                        <p>Red Printed T-Shirt</p>
-                        <small>Hinta: 40.00€</small>
-                        <br>
-                        <a href="">Poista</a>
-                    </div>
-
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>40.00€</td>
-        </tr>
-    </table>
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Tuotteiden summa</td>
-                    <td>200.00€</td>
-                </tr>
-                <tr>
-                    <td>Postitus</td>
-                    <td>30.00€</td>
-                </tr>
-                <tr>
-                    <td>Yhteensä</td>
-                    <td>230.00€</td>
-                </tr>
-            </table>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">TUOTE</h5>
+            <h5 class="price">HINTA</h5>
+            <h5 class="quantity">MÄÄRÄ</h5>
+            <h5 class="total">YHTEENSÄ</h5>
         </div>
+        <div class="products">
 
-</div>
+        </div>
+    </div>
+
+    <button class="purchase" type="button">Osta</button>
+
+
 
 <!-------- Footer --------->
 <div class="footer">
@@ -166,9 +111,9 @@
 </div>
 
 <!--- js for toggle menu --->
-<script src="js/etusivu.js">
+<script src="js/ostoskori.js" async></script>
 
+<script src="js/menu.js" async></script>
 
-</script>
 </body>
 </html>

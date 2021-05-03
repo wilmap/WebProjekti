@@ -7,13 +7,44 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    padding-top: 65px;
+
 }
 
+section {
+
+}
+section .scroll{
+    width: 100%;
+    display: flex;
+}
+section .scroll div{
+    margin-top: 10px;
+    color: #000;
+    font-size: 10px;
+    background: #fff;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+
 }
 .header .row{
     margin-top: 70px;
+
 }
 
 .dropbutton {
@@ -64,12 +95,24 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    background-color: rgba(255, 255, 255, 1);
 
 }
 
 nav{
     flex: 1;
     text-align: right;
+
+}
+
+.cart{
+    float:left;
+
 }
 
 nav ul{
@@ -99,7 +142,7 @@ p{
     color: #555;
 }
 
-.container{
+.container, .products-container{
     max-width: 1300px;
     margin: auto;
     padding-left: 25px;
@@ -267,6 +310,7 @@ small{
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+    margin-top: auto;
 }
 .footer p{
     color: #8a8a8a;
@@ -323,7 +367,7 @@ ul{
 }
 
 
-/* all products page */
+/* kaikki tuotteet */
 
 .row-2{
     justify-content: space-between;
@@ -353,6 +397,132 @@ select:focus{
     background: #ff523b;
     color: #fff;
 }
+
+.add-cart{
+    position: relative;
+    background-color: #f1c8c8;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    color: #333333;
+    opacity: 0;
+
+}
+
+.col-4:hover .cart1,
+.col-4:hover .cart2,
+.col-4:hover .cart3,
+.col-4:hover .cart4{
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}*
+.add-cart:active{
+    transform: scale(.9);
+}
+
+.add-cart .fa-shopping-cart{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    font-size: 2em;
+    transform: translate(-50%,-50%);
+}
+
+.add-cart .fa-th-large{
+    position: absolute;
+    z-index: 3;
+    top: -20%;
+    left: 52%;
+    font-size: 1.2em;
+    transform: translate(-50%,-50%);
+}
+.add-cart span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    font-size: 1.3em;
+    transform: translate(-50%, -50%);
+}
+
+.add-cart span.add-to-cart{
+    opacity: 1;
+}
+
+.add-cart span.added{
+    opacity: 0;
+}
+
+.add-cart.clicked .fa-shopping-cart{
+    animation: cart 1.5s ease-in-out forwards;
+}
+
+.add-cart.clicked .fa-th-large{
+    animation: th 1.5s ease-in-out forwards;
+}
+
+.add-cart.clicked span.add-to-cart{
+    animation: txt1 1.5s ease-in-out forwards;
+}
+.add-cart.clicked span.added {
+    animation: txt2 1.5s ease-in-out forwards;
+}
+
+
+@keyframes cart{
+    0%{
+        left: -10%;
+    }
+    40%, 60%{
+        left: 50%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+@keyframes th {
+    0%, 40%{
+        left: 52%;
+    }
+    60%{
+        top: 40%;
+        left: 52%;
+    }
+    100%{
+        top: 40%;
+        left: 112%;
+    }
+
+}
+
+
+@keyframes txt1 {
+    0%{
+        opacity: 1;
+    }
+    20%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes txt2 {
+    0%, 80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 /*----------- Tuote tiedot sivu ------------*/
 
@@ -399,62 +569,154 @@ input:focus{
     cursor: pointer;
 }
 
-/*----------- ostoskori --------------*/
+/*---------- ostoskori ----------*/
 
-.cart-page{
-    margin: 80px auto;
+
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 50px auto 0;
 }
-table{
+
+.cartIconRemove{
+    color: #d03838;
+
+}
+.cartIcons{
+    color: #e38ea8;
+    padding: 10px;
+}
+
+.product-header{
     width: 100%;
-    border-collapse: collapse;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
 }
-.cart-info{
+
+.product-title{
+    width: 45%;
+}
+.price{
+    border-bottom: 1px solid lightgrey;
+    width: 15%;
+    align-items: center;
+    display: flex;
+}
+
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.infoPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 110px;
+    padding-left: 40px;
+}
+
+.infoQuantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 160px;
+}
+
+.infoTotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 170px;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width: 45%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+
+.products{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-th{
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    background: #d5a39b;
-    font-weight: normal;
+
+.products img{
+    width: 75px;
 }
-td{
-    padding: 10px 5px;
-}
-td input {
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-}
-td a {
-    color: #ff523b;
-    font-size: 12px;
-}
-td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-.total-price{
+
+.basketTotalContainer{
     display: flex;
     justify-content: flex-end;
-}
-.total-price table{
-    border-top: 3px solid #ff523b;
     width: 100%;
-    max-width: 380px;
-}
-td:last-child{
-    text-align: right;
-}
-th:last-child{
-    text-align: right;
+    padding: 10px 0;
 }
 
+.basketTotalTitle{
+    width: 20%
+}
 
+.basketTotal{
+    width: 5%;
+}
 
-/*---------dddd  ---------*/
+.cartName{
+    opacity: 1;
+}
+
+/* Tuotetiedot */
+
+.products-containerInfo{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 50px auto 0;
+}
+
+.productInfo{
+    width: 45%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.productsInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgInfo{
+    width: 300px;
+}
+
+.nameInfo{
+    font-weight: bold;
+}
+
+/*---------Slider  ---------*/
 
 
 
@@ -560,6 +822,11 @@ th:last-child{
 }
 
 
+
+
+
+
+
 /*-------- media query for menu --------*/
 
 @media only screen and (max-width: 800px){
@@ -572,12 +839,16 @@ th:last-child{
         overflow: hidden;
         transition: max-height 0.5s;
     }
+    nav{
+        text-align: right;
+    }
     nav ul li{
         display: block;
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .tit
     nav ul li a{
         color: #fff;
     }
@@ -591,6 +862,10 @@ th:last-child{
         right: 100%;
         top: 0;
     }
+    .cartName{
+        font-size: 14px;
+    }
+
     }
 
 
@@ -615,3 +890,4 @@ th:last-child{
         display: none;
     }
 }
+

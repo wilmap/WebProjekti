@@ -38,20 +38,28 @@
                     <li><a href="">Tili</a></li>
                 </ul>
             </nav>
-            <a href="ostoskori.html">
-                <img alt="" src="img/cart.png" width=30px" height="30px">
-            </a>
+            <ul>
+                <li class="cart">
+                    <a href="ostoskori.html">
+                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                    </a>
+                </li>
+            </ul>
             <img src="img/menu.png" class="menu-icon" alt=""
                  onclick="menutoggle()">
         </div>
     </div>
 </div>
 
+
+
 <!------ Yksittäisen tuottteen tiedot -------->
 <div class="small-container single-product">
     <div class="row">
-        <div class="col-2">
-            <img src="img/gallery-1.jpg" width="100%" alt="" id="ProductImg">
+                <div class="productsInfoImg">
+
+                </div>
+            <!----
             <div class="small-img-row">
                 <div class="small-img-col">
                     <img src="img/gallery-1.jpg" width="100%" alt=""
@@ -70,14 +78,18 @@
                     class="small-img">
                 </div>
             </div>
+            ----->
 
 
 
-        </div>
         <div class="col-2">
             <p>Home / T-Shirt</p>
-            <h1>Red Printed T-Shirt by HRX</h1>
-            <h4>50.00€</h4>
+            <div class="productsInfoTitle">
+
+            </div>
+            <div class="productsInfoPrice">
+
+            </div>
             <select>
                 <option>Valitse koko</option>
                 <option>XXL</option>
@@ -91,12 +103,9 @@
             <a href="" class="btn">Lisää ostoskoriin</a>
             <h3>Tuotetiedot <i class="fa fa-indent"></i></h3>
             <br>
-            <p> Quisque ullamcorper, neque non ullamcorper gravida,
-                mi sapien convallis neque, ut ornare ante tellus
-                nec est. Curabitur molestie diam et ligula mollis
-                feugiat. Nulla facilisi. Cras lobortis dolor ac risus
-                cursus porta. Curabitur placerat justo nisi, ut pretium
-                urna consectetur eget.</p>
+            <div class="productsInfoDesc">
+
+            </div>
         </div>
     </div>
 </div>
@@ -104,8 +113,8 @@
 <!---- otsikko------>
 <div class="small-container">
     <div class="row row-2">
-        <h2>Related Products</h2>
-        <p>View More</p>
+        <h2>Samankaltaisia tuotteita</h2>
+        <p>Katso lisää</p>
     </div>
 </div>
 
@@ -208,9 +217,12 @@
 </div>
 
 <!--- js for toggle menu --->
-<script src="js/etusivu.js">
-
-
+<script src="js/tuotetiedot.js">
 </script>
+<script src="js/ostoskori.js">
+</script>
+<script src="js/menu.js">
+</script>
+
 </body>
 </html>
