@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Kauneus ja terveys</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/kauneus_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=
+    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
@@ -21,9 +27,9 @@
                                 <i class="fa fa-caret-down"></i></button>
                             <div class="dropdown-content">
                                 <a href="tuotteet.html" >Kaikki tuotteet</a>
-                                <a href="vaatesivu.html" > &#9830; Vaatteet</a>
-                                <a href="kauneussivu.html" >&#9830; Kauneus</a>
-                                <a href="sisustussivu.html" >&#9830; Sisustus</a>
+                                <a href="vaatesivu.html" > Vaatteet</a>
+                                <a href="kauneussivu.html" >Kauneus</a>
+                                <a href="sisustussivu.html" > Sisustus</a>
                             </div>
                         </div>
                         <li><a href="etusivu.html">Etusivu</a></li>
@@ -44,96 +50,107 @@
                 <img src="img/menu.png" class="menu-icon" alt=""
                      onclick="menutoggle()">
             </div>
+
+
         </div>
     </div>
+
+<div class="image-container">
+    <img class="imageCont" src= "img/pullo.jpeg" alt="puinen lautanen, jonka päällä seerumi ja kukkien terälehtiä">
+    <div class="centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aliquid at commodi, distinctio
+        dolores <br>ducimus ex harum illum inventore, molestias natus nulla rem reprehenderit saepe similique
+        sint sit ullam voluptate?</div>
+</div>
 <!-- Tähän loppuu "navigaatio koodi" -->
 
-<!--
-kommentoin väliaikaisesti pois kun tulee hieman rumasti kaiken päälle tällä hetkellä
-<div class="banner-area">
-    <h2>Welcome</h2>
-</div>
---->
-
-<!--    <div class="content-area">-->
-<!--        <div class="wrapper">-->
-            <div class="beauty">
-                <img id="beautybanner" src= "img/pullo.jpeg" alt="puinen lautanen, jonka päällä seerumi ja kukkien terälehtiä" style="width: 60%">
-                <h2>Kauneus</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aliquid at commodi, distinctio
-                    dolores ducimus ex harum illum inventore, molestias natus nulla rem reprehenderit saepe similique
-                    sint sit ullam voluptate?</p>
-            </div>
-<!--        </div>-->
-<!--    </div>-->
 
     <!--Tuotteet-->
     <div class="small-container">
-            <h2 class="title">Tuotteet</h2>
+            <h2 class="title">Kauneus</h2>
             <div class="row">
                 <div class="col-4">
-                    <img src="img/faceroller.jpeg" alt="Kasvorulla">
+                    <a class="tuotetiedotNappi" href="tuotetiedot.html">
+                    <img src="img/faceroller.jpg" alt="Kasvorulla">
+                    </a>
                     <h4>Faceroller</h4>
+                    <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
                     <p>10.00€</p>
+                        </div>
+                    <button class="add-cart cart1">
+                        <span class="add-to-cart">Lisää koriin</span>
+                        <span class="added">Lisätty!</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-th-large"></i>
+                    </button>
                 </div>
                 <div class="col-4">
-                    <img src="img/huulikiilto.jpeg" alt="Punaisen sävyisiä huulikiiltoja">
+                    <a class="tuotetiedotNappi" href="tuotetiedot.html">
+                    <img src="img/huulikiilto.jpg" alt="Punaisen sävyisiä huulikiiltoja">
+                    </a>
                     <h4>Huulikiilto</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
                     <p>10.00€</p>
+                    <button class="add-cart cart1">
+                        <span class="add-to-cart">Lisää koriin</span>
+                        <span class="added">Lisätty!</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-th-large"></i>
+                    </button>
                 </div>
                 <div class="col-4">
-                    <img src="img/puuteru.jpeg" alt="Eri sävyisiä puutereita">
+                    <a class="tuotetiedotNappi" href="tuotetiedot.html">
+                    <img src="img/puuteri.jpg" alt="Eri sävyisiä puutereita">
+                    </a>
                     <h4>Puuteri</h4>
-                    <p>10.00€</p>
+                    <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>15.00€</p>
+                    </div>
+                    <button class="add-cart cart1">
+                        <span class="add-to-cart">Lisää koriin</span>
+                        <span class="added">Lisätty!</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-th-large"></i>
+                    </button>
                 </div>
                 <div class="col-4">
-                    <img src="img/seerumi.jpeg" alt="Seerumi">
+                    <a class="tuotetiedotNappi" href="tuotetiedot.html">
+                        <img src="img/seerumi.jpg" alt="Seerumi">
+                    </a>
                     <h4>Seerumi</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/conditioner.jpeg" alt="Hiusten hoitoaine">
-                    <h4>Hoitoaine</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/shampoo.jpeg" alt="Shampoo">
-                    <h4>Shampoo</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/ihonhoitosetti.jpeg" alt="Ihonhoito tuotteita">
-                    <h4>Ihonhoitosetti</h4>
-                    <p>50.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/kampa.jpeg" alt="Hiuskampa">
-                    <h4>Hiuskampa</h4>
-                    <p>5.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/kylpysuolat.jpeg" alt="Kylpysuola">
-                    <h4>Kylpysuola</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/kuorinta.jpeg" alt="Kuorintavoide">
-                    <h4>Kuorintavoide</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/luomiväri.jpeg" alt="Luomiväri">
-                    <h4>Luomiväri</h4>
-                    <p>10.00€</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/rajauskynä.jpeg" alt="Rajauskynä">
-                    <h4>Rajauskynä</h4>
-                    <p>5.00€</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>30.00€</p>
+                    <button class="add-cart cart1">
+                        <span class="add-to-cart">Lisää koriin</span>
+                        <span class="added">Lisätty!</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fa fa-th-large"></i>
+                    </button>
                 </div>
         </div>
     </div>
     <script src="js/ostoskori.js"></script>
-
+<script src="js/tuotetiedot.js"></script>
     </body>
     </html>

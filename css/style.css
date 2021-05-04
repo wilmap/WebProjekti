@@ -10,6 +10,10 @@ body{
     padding-top: 65px;
 
 }
+/* Tähän voi muuttaa domii */
+article{
+    float:left; display:inline;
+}
 
 section {
 
@@ -38,13 +42,27 @@ section .scroll div{
 
 }
 
+.headerFrontpage{
+    background: radial-gradient(#fff,#ffd6d7);
+}
 
 .header{
 
 }
+
 .header .row{
     margin-top: 70px;
 
+}
+
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #555555;
+    font-weight: bold;
 }
 
 .dropbutton {
@@ -148,13 +166,19 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.image-container {
+    position: relative;
+}
 .small-container {
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
-
+.imageCont{
+    width: 100%;
+}
 
 .row{
     display: flex;

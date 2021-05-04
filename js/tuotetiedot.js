@@ -71,16 +71,129 @@ let productsInfo = [
     }
 ]
 
+let productsClothesInfo = [
+    {
+        name: 'Kukkamekko',
+        tag: 'kukkamekko',
+        desc: 'Hieno mekko, yms.',
+        price: 40
+    },
+    {
+        name: 'Vaaleansininen Huppari',
+        tag: 'vaaleansininenhuppari',
+        price: 120
+    },
+    {
+        name: 'Beige Poncho',
+        tag: 'beigeponcho',
+        price: 80
+    },{
+        name: 'Kokouimapuku',
+        tag: 'kokouimapuku',
+        price: 32
+    },{
+        name: 'Pitsinen Pitkähihainen Paita',
+        tag: 'pitsinenpitkähihainenpaita',
+        price: 21
+    },{
+        name: 'Punainen Haalari',
+        tag: 'punainenhaalari',
+        price: 63
+    },{
+        name: 'Harmaa Takki',
+        tag: 'harmaatakki',
+        price: 99
+    },{
+        name: 'Sininen Puvuntakki',
+        tag: 'sininenpuvuntakki',
+        price: 150
+    },{
+        name: 'Raidallinen T-Paita',
+        tag: 'raidallinentpaita',
+        price: 15
+    },{
+        name: 'Vihreä Hame',
+        tag: 'vihreähame',
+        price: 45
+    },{
+        name: 'Vaaleanpunainen Mekko',
+        tag: 'vaaleanpunainenmekko',
+        price: 66
+    },{
+        name: 'Pystyraidalliset Housut',
+        tag: 'pystyraidallisethousut',
+        price: 10
+    },{
+        name: 'Made Kukkapusero',
+        tag: 'madekukkapusero',
+        price: 10
+    },{
+        name: 'Oddities Musta T-Paita',
+        tag: 'odditiesmustat-paita',
+        price: 10
+    }
+]
+
+let productsMakeupInfo= [
+    {
+        name: 'Faceroller',
+        tag: 'faceroller',
+        price: 10,
+        desc: 'Hieno faceroller, yms.',
+        inCart: 0
+    },
+    {
+        name: 'Huulikiilto',
+        tag: 'huulikiilto',
+        price: 10,
+        inCart: 0
+    },
+    {
+        name: 'Puuteri',
+        tag: 'puuteri',
+        price: 15,
+        inCart: 0
+    },{
+        name: 'Seerumi',
+        tag: 'seerumi',
+        price: 30,
+        inCart: 0
+    }
+]
+
+
 /* Napin painalluksesta tee nämä funktiot */
 
 let cartsInfo = document.querySelectorAll('.tuotetiedotNappi')
 
+if (window.location.pathname === '/Projekti/vaatesivu.html') {
+    for(let i=0; i < cartsInfo.length; i++) {
+        cartsInfo[i].addEventListener('click', () => {
+            cartNumbersInfo(productsClothesInfo[i])
+        })
+    }
+}else if(window.location.pathname === '/Projekti/kauneussivu.html'){
+    for(let i=0; i < cartsInfo.length; i++) {
+        cartsInfo[i].addEventListener('click', () => {
+            cartNumbersInfo(productsMakeupInfo[i])
+        })
+    }
+}else{
+    for(let i=0; i < cartsInfo.length; i++) {
+        cartsInfo[i].addEventListener('click', () => {
+            cartNumbersInfo(productsInfo[i])
+        })
+    }
+}
+
+
+/*
 for(let i=0; i < cartsInfo.length; i++) {
     cartsInfo[i].addEventListener('click', () => {
         cartNumbersInfo(productsInfo[i])
     })
 }
-
+*/
 
 /* Lataa sivulle korissa olevan tavaroiden määrän */
 
