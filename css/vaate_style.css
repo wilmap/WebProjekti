@@ -561,7 +561,7 @@ th:last-child{
 
 
 
-/*-------- media query for menu --------*/
+/*-------- query for menu --------*/
 
 @media only screen and (max-width: 800px){
     nav ul{
