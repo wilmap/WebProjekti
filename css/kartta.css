@@ -70,4 +70,75 @@ h1.temp {
     top: 0;
     left: 20px;
 }
+.bannerkuva {
+    width: 100%;
+}
+/*-------- media query for menu --------*/
 
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav{
+        text-align: right;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .tit
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        position: absolute;
+        right: 100%;
+        top: 0;
+    }
+    .cartName{
+        font-size: 14px;
+    }
+
+}
+video {
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4, .slider{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
