@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=
-    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
-    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet-->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,10 +16,10 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="img/logo.png" width="125px" alt="store logo">
+                <img src="img/logo.png" alt="store logo">
             </div>
             <nav>
-                <ul id="MenuItems">
+
                     <div class="dropdown">
                         <button class="dropbutton">Tuotteet
                             <i class="fa fa-caret-down"></i></button>
@@ -31,6 +30,7 @@
                             <a href="sisustussivu.html" >Sisustus</a>
                         </div>
                     </div>
+                <ul id="MenuItems">
                     <li><a href="etusivu.html">Etusivu</a></li>
                     <li><a href="ehdotukset.html">Ehdotukset</a></li>
                     <li><a href="kartta.html">Kartta</a></li>
@@ -41,7 +41,7 @@
             <ul>
                 <li class="cart">
                     <a href="ostoskori.html">
-                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        <img src="img/cart.png" alt="" id="ostoskuva"><span>0</span>
                     </a>
                 </li>
             </ul>
@@ -53,33 +53,11 @@
 
 
 
-<!------ Yksittäisen tuottteen tiedot -------->
+<!-- Yksittäisen tuottteen tiedot -->
 <div class="small-container single-product">
     <div class="row">
                 <div class="productsInfoImg">
-
                 </div>
-            <!----
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="img/gallery-1.jpg" width="100%" alt=""
-                    class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/gallery-2.jpg" width="100%" alt=""
-                    class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/gallery-3.jpg" width="100%" alt=""
-                    class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/gallery-4.jpg" width="100%" alt=""
-                    class="small-img">
-                </div>
-            </div>
-            ----->
-
 
 
         <div class="col-2">
@@ -90,18 +68,6 @@
             <div class="productsInfoPrice">
 
             </div>
-            <!---
-            <select>
-                <option>Valitse koko</option>
-                <option>XXL</option>
-                <option>XL</option>
-                <option>Large</option>
-                <option>Medium</option>
-                <option>Small</option>
-                <option>XS</option>
-            </select>
-            <input type="number" value="1">
-            ---->
             <h3>Tuotetiedot <i class="fa fa-indent"></i></h3>
             <br>
             <div class="productsInfoDesc">
@@ -111,7 +77,7 @@
     </div>
 </div>
 
-<!---- otsikko------>
+<!-- otsikko -->
 <div class="small-container">
     <div class="row row-2">
         <h2>Samankaltaisia tuotteita</h2>
@@ -175,7 +141,7 @@
 
 
 
-<!-------- Footer --------->
+<!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -183,8 +149,8 @@
                 <h3>Lataa sovellukset</h3>
                 <p>Lataa sovellus Apple tai Play Storesta</p>
                 <div class="app-logo">
-                    <img src="img/play-store.png">
-                    <img src="img/app-store.png">
+                    <img src="img/play-store.png" alt="play storen logo">
+                    <img src="img/app-store.png" alt="app storen logo">
                 </div>
             </div>
             <div class="footer-col-2">
@@ -216,7 +182,7 @@
     </div>
 </div>
 
-<!--- js for toggle menu --->
+<!-- js for toggle menu -->
 <script src="js/tuotetiedot.js">
 </script>
 <script src="js/ostoskori.js">
