@@ -166,13 +166,13 @@ let productsMakeupInfo= [
 
 let cartsInfo = document.querySelectorAll('.tuotetiedotNappi')
 
-if (window.location.pathname === '/Projekti/vaatesivu.html') {
+if (window.location.pathname === '/WebProjekti/vaatesivu.html') {
     for(let i=0; i < cartsInfo.length; i++) {
         cartsInfo[i].addEventListener('click', () => {
             cartNumbersInfo(productsClothesInfo[i])
         })
     }
-}else if(window.location.pathname === '/Projekti/kauneussivu.html'){
+}else if(window.location.pathname === '/WebProjekti/kauneussivu.html'){
     for(let i=0; i < cartsInfo.length; i++) {
         cartsInfo[i].addEventListener('click', () => {
             cartNumbersInfo(productsMakeupInfo[i])

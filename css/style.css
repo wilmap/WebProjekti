@@ -145,6 +145,10 @@ nav{
 .cart{
     float:left;
 }
+#ostoskuva {
+    width: 30px;
+    height: 30px;
+}
 
 nav ul{
     display: inline-block;
