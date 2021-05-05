@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <title>Yhteystiedot</title>
@@ -14,20 +14,20 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="img/logo.png" width="125px" alt="store logo">
+                <img src="img/logo.png" alt="store logo">
             </div>
             <nav>
-                <ul id="MenuItems">
-                    <div class="dropdown">
-                        <button class="dropbutton">Tuotteet
-                            <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="tuotteet.html">Kaikki tuotteet</a>
-                            <a href="vaatesivu.html">Vaatteet</a>
-                            <a href="kauneussivu.html">Kauneus</a>
-                            <a href="sisustussivu.html">Sisustus</a>
-                        </div>
+                <div class="dropdown">
+                    <button class="dropbutton">Tuotteet
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="tuotteet.html">Kaikki tuotteet</a>
+                        <a href="vaatesivu.html">Vaatteet</a>
+                        <a href="kauneussivu.html">Kauneus</a>
+                        <a href="sisustussivu.html">Sisustus</a>
                     </div>
+                </div>
+                <ul id="MenuItems">
                     <li><a href="etusivu.html">Etusivu</a></li>
                     <li><a href="ehdotukset.html">Ehdotukset</a></li>
                     <li><a href="kartta.html">Kartta</a></li>
@@ -38,7 +38,7 @@
             <ul>
                 <li class="cart">
                     <a href="ostoskori.html">
-                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        <img id="ostoskuva" src="img/cart.png" alt=""><span>0</span>
                     </a>
 
                 </li>
@@ -59,7 +59,7 @@
     </div>
     <div class="row">
         <div class="column">
-            <img src="img/kirjoita.jpg" style="width:100%">
+            <img id="kuvanasetukset" src="img/kirjoita.jpg" alt="kuva">
         </div>
         <div class="column">
             <form action="/action_page.php">
@@ -103,7 +103,7 @@
 </div>
 
 
-<!-------- Footer --------->
+<!--Footer-->
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -111,13 +111,14 @@
                 <h3>Lataa sovellukset</h3>
                 <p>Lataa sovellus Apple tai Play Storesta</p>
                 <div class="app-logo">
-                    <img src="img/play-store.png">
-                    <img src="img/app-store.png">
+                    <img src="img/play-store.png" alt="logo">
+                    <img src="img/app-store.png" alt="logo">
                 </div>
             </div>
             <div class="footer-col-2">
                 <img src="img/logo-white.png" alt="">
-                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä sivustoa,<br>
+                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä
+                    sivustoa,<br>
                     hänen tulee tarkistaa näihin ehtoihin tehdyt muutokset.</p>
             </div>
             <div class="footer-col-3">
