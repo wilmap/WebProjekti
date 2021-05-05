@@ -179,7 +179,6 @@ if (window.location.pathname === '/WebProjekti/vaatesivu.html') {
         })
     }
 } else{
-    console.log(window.location.pathname)
     for(let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cartNumbers(products[i])
