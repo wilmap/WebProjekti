@@ -8,9 +8,9 @@ const picArray = [
   },
   {
 
-    caption: 'Kaktus',
+    caption: 'Sisäkasvi',
     description: '8.00 €',
-    filename: 'img/kaktus.jpg',
+    filename: 'img/kasvi.png',
   },
   {
 
@@ -29,7 +29,7 @@ const picArray = [
 
 const mainElement = document.querySelector("main");
 
-let productContainer = document.querySelector(".col-4")
+let productContainer = document.querySelector(".dompic")
 productContainer.innerHTML = ''
 for (let i= 0; i < picArray.length; i++){
   productContainer.innerHTML+=

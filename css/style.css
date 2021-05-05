@@ -12,7 +12,21 @@ body{
 }
 /* Tähän voi muuttaa domii */
 article{
-    float:left; display:inline;
+    width: 50%;
+    padding: 30px;
+}
+.dompic {
+    flex-basis: 100%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dompic img{
+    width: 100%;
+    height: 480px;
 }
 
 section {
@@ -918,6 +932,9 @@ video {
     }
     .cart-info p{
         display: none;
+    }
+    article {
+        width: 100%;
     }
 }
 
