@@ -6,70 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=
-    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
-    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet-->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo.png" width="125px" alt="store logo">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <div class="dropdown">
-                            <button class="dropbutton">Tuotteet
-                            <i class="fa fa-caret-down"></i></button>
-                            <div class="dropdown-content">
-                                <a href="tuotteet.html" >Kaikki tuotteet</a>
-                                <a href="vaatesivu.html" >Vaatteet</a>
-                                <a href="kauneussivu.html" >Kauneus</a>
-                                <a href="sisustussivu.html" >Sisustus</a>
-                            </div>
-                        </div>
-                        <li><a href="etusivu.html">Etusivu</a></li>
-                        <li><a href="ehdotukset.html">Ehdotukset</a></li>
-                        <li><a href="kartta.html">Kartta</a></li>
-                        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                        <li><a href="tili.html">Tili</a></li>
-                    </ul>
-                </nav>
-                <ul>
-                    <li class="cart">
-                        <a href="ostoskori.html">
-                            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
-                        </a>
-                    </li>
-                </ul>
-                <img src="img/menu.png" class="menu-icon" alt=""
-                 onclick="menutoggle()">
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="store logo">
             </div>
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbutton">Tuotteet
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="tuotteet.html">Kaikki tuotteet</a>
+                        <a href="vaatesivu.html">Vaatteet</a>
+                        <a href="kauneussivu.html">Kauneus</a>
+                        <a href="sisustussivu.html">Sisustus</a>
+                    </div>
+                </div>
+                <ul id="MenuItems">
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                    <li><a href="kartta.html">Kartta</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li><a href="tili.html">Tili</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li class="cart">
+                    <a href="ostoskori.html">
+                        <img id="ostoskuva" src="img/cart.png" alt=""><span>0</span>
+                    </a>
+                </li>
+            </ul>
+            <img src="img/menu.png" class="menu-icon" alt=""
+                 onclick="menutoggle()">
         </div>
     </div>
+</div>
 
-<!--- ostoskorin tiedot ---->
+<!-- ostoskorin tiedot -->
 
-    <div class="products-container">
-        <div class="product-header">
-            <h5 class="product-title">TUOTE</h5>
-            <h5 class="price">HINTA</h5>
-            <h5 class="quantity">MÄÄRÄ</h5>
-            <h5 class="total">YHTEENSÄ</h5>
-        </div>
-        <div class="products">
-
-        </div>
+<div class="products-container">
+    <div class="product-header">
+        <h5 class="product-title">TUOTE</h5>
+        <h5 class="price">HINTA</h5>
+        <h5 class="quantity">MÄÄRÄ</h5>
+        <h5 class="total">YHTEENSÄ</h5>
     </div>
+    <div class="products">
 
-    <button class="purchase" type="button">Osta</button>
+    </div>
+</div>
+
+<button class="purchase" type="button">Osta</button>
 
 
-
-<!-------- Footer --------->
+<!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -77,8 +76,8 @@
                 <h3>Lataa bla bla sovellus</h3>
                 <p>Lataa sovellus Apple tai Play Storesta</p>
                 <div class="app-logo">
-                    <img src="img/play-store.png">
-                    <img src="img/app-store.png">
+                    <img src="img/play-store.png" alt="">
+                    <img src="img/app-store.png" alt="">
                 </div>
             </div>
             <div class="footer-col-2">
@@ -110,7 +109,7 @@
     </div>
 </div>
 
-<!--- js for toggle menu --->
+<!-- js for toggle menu -->
 <script src="js/ostoskori.js" async></script>
 
 <script src="js/menu.js" async></script>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <title>Etusivu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=
-    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
-    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet-->
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,20 +17,20 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="img/logo.png" width="125px" alt="store logo">
+                <img src="img/logo.png" alt="store logo">
             </div>
             <nav>
-                <ul id="MenuItems">
-                    <div class="dropdown">
-                        <button class="dropbutton">Tuotteet
-                            <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="tuotteet.html">Kaikki tuotteet</a>
-                            <a href="vaatesivu.html">Vaatteet</a>
-                            <a href="kauneussivu.html">Kauneus</a>
-                            <a href="sisustussivu.html">Sisustus</a>
-                        </div>
+                <div class="dropdown">
+                    <button class="dropbutton">Tuotteet
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="tuotteet.html">Kaikki tuotteet</a>
+                        <a href="vaatesivu.html">Vaatteet</a>
+                        <a href="kauneussivu.html">Kauneus</a>
+                        <a href="sisustussivu.html">Sisustus</a>
                     </div>
+                </div>
+                <ul id="MenuItems">
                     <li><a href="etusivu.html">Etusivu</a></li>
                     <li><a href="ehdotukset.html">Ehdotukset</a></li>
                     <li><a href="kartta.html">Kartta</a></li>
@@ -41,7 +41,7 @@
             <ul>
                 <li class="cart">
                     <a href="ostoskori.html">
-                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        <img id="ostoskuva" src="img/cart.png" alt=""><span>0</span>
                     </a>
 
                 </li>
@@ -53,14 +53,15 @@
         <div class="row">
             <div class="col-2">
                 <h1>Kevään uutuudet ovat nyt täällä!<br> 2021 kevät</h1>
-                <p>Tervetuloa verkkokauppaamme!<br> Tuotteemme ovat ekologisia ja ympäristöystävällisesti tuotettuja.<br>
+                <p>Tervetuloa verkkokauppaamme!<br> Tuotteemme ovat ekologisia ja ympäristöystävällisesti
+                    tuotettuja.<br>
                     Asiakkaat ovat meille tärkeitä, siksi kuuntelemme teidän toiveitanne.<br>
                     Kevään uutuudet ovat täällä, joten eikun shoppailemaan!
                 </p>
                 <a href="" class="btn">Lue lisää kevään eduista &#8594;</a>
             </div>
             <div class="col-2">
-                <img src="img/womanO.png" alt="" width="100%">
+                <img src="img/womanO.png" alt="">
             </div>
         </div>
     </div>
@@ -102,7 +103,7 @@
         <label for="radio4" class="manual-btn"></label>
     </div>
 </div>
-<!--- Featured categories --->
+<!-- Featured categories -->
 <div class="categories">
     <div class="small-container">
         <div class="row">
@@ -118,7 +119,7 @@
         </div>
     </div>
 </div>
-<!--- Featured products --->
+<!-- Featured products -->
 
 <div class="small-container">
     <h2 class="title">Tämän hetken suosikit</h2>
@@ -274,7 +275,7 @@
         </div>
     </div>
 </div>
-<!--- offer --->
+<!-- offer -->
 <div class="offer">
     <div class="small-container">
         <div class="row">
@@ -294,7 +295,7 @@
     </div>
 </div>
 
-<!--- testimonial --->
+<!-- testimonial -->
 <div class="testimonial">
     <div class="small-container">
         <div class="row">
@@ -311,7 +312,7 @@
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <img src="img/user-1.png">
+                <img src="img/user-1.png" alt="">
                 <h3>Minna Leppänen</h3>
             </div>
             <div class="col-3">
@@ -327,7 +328,7 @@
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <img src="img/user-2.png">
+                <img src="img/user-2.png" alt="">
                 <h3>Kari Koski</h3>
             </div>
             <div class="col-3">
@@ -342,7 +343,7 @@
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <img src="img/user-3.png">
+                <img src="img/user-3.png" alt="">
                 <h3>Leena Hakkarainen</h3>
             </div>
         </div>
@@ -350,30 +351,30 @@
 </div>
 
 
-<!--- merkit --->
+<!-- merkit -->
 <div class="brands">
     <div class="small-container">
         <div class="row">
             <div class="col-5">
-                <img src="img/logo-patagonia.png">
+                <img src="img/logo-patagonia.png" alt="logo">
             </div>
             <div class="col-5">
-                <img src="img/logo-oppo.png">
+                <img src="img/logo-oppo.png" alt="logo">
             </div>
             <div class="col-5">
-                <img src="img/logo-coca-cola.png">
+                <img src="img/logo-coca-cola.png" alt="logo">
             </div>
             <div class="col-5">
-                <img src="img/logo-paypal.png">
+                <img src="img/logo-paypal.png" alt="logo">
             </div>
             <div class="col-5">
-                <img src="img/logo-philips.png">
+                <img src="img/logo-philips.png" alt="logo">
             </div>
         </div>
     </div>
 </div>
 
-<!-------- Footer --------->
+<!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -381,13 +382,14 @@
                 <h3>Lataa sovellukset</h3>
                 <p>Lataa sovellus Apple tai Play Storesta</p>
                 <div class="app-logo">
-                    <img src="img/play-store.png">
-                    <img src="img/app-store.png">
+                    <img src="img/play-store.png" alt="">
+                    <img src="img/app-store.png" alt="">
                 </div>
             </div>
             <div class="footer-col-2">
                 <img src="img/logo-white.png" alt="">
-                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä sivustoa,<br>
+                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä
+                    sivustoa,<br>
                     hänen tulee tarkistaa näihin ehtoihin tehdyt muutokset.</p>
             </div>
             <div class="footer-col-3">
@@ -413,7 +415,7 @@
         <p class="copyright">&#169; Copyright 2021 - Shopzilla Oy</p>
     </div>
 </div>
-<!--- js for toggle menu --->
+<!-- js for toggle menu -->
 <script src="js/etusivu.js"></script>
 <script src="js/menu.js"></script>
 
