@@ -13,62 +13,62 @@
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
 <div class="header">
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <img src="img/logo.png" width="125px" alt="store logo">
-      </div>
-      <nav>
-        <ul id="MenuItems">
-          <div class="dropdown">
-            <button class="dropbutton">Tuotteet
-              <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <a href="tuotteet.html" >Kaikki tuotteet</a>
-              <a href="vaatesivu.html" >Vaatteet</a>
-              <a href="kauneussivu.html" >Kauneus</a>
-              <a href="sisustussivu.html" >Sisustus</a>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125px" alt="store logo">
             </div>
-          </div>
-          <li><a href="etusivu.html">Etusivu</a></li>
-          <li><a href="ehdotukset.html">Ehdotukset</a></li>
-          <li><a href="kartta.html">Kartta</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          <li><a href="tili.html">Tili</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li class="cart">
-          <a href="ostoskori.html">
-            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
-          </a>
+            <nav>
+                <ul id="MenuItems">
+                    <div class="dropdown">
+                        <button class="dropbutton">Tuotteet
+                            <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="tuotteet.html">Kaikki tuotteet</a>
+                            <a href="vaatesivu.html">Vaatteet</a>
+                            <a href="kauneussivu.html">Kauneus</a>
+                            <a href="sisustussivu.html">Sisustus</a>
+                        </div>
+                    </div>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                    <li><a href="kartta.html">Kartta</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li><a href="tili.html">Tili</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li class="cart">
+                    <a href="ostoskori.html">
+                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                    </a>
 
-        </li>
-      </ul>
-      <img src="img/menu.png" class="menu-icon" alt=""
-           onclick="menutoggle()">
+                </li>
+            </ul>
+            <img src="img/menu.png" class="menu-icon" alt=""
+                 onclick="menutoggle()">
+        </div>
     </div>
-  </div>
 </div>
 <!-- Tästä loppuu "navigaatio koodi" -->
 <!--Tästä alkaa sään koodi-->
-  <div class="card">
+<div class="card">
     <div class="search_weather">
-      <input type="text" class="search_bar_weather" placeholder="Hae kaupunkia">
-      <button id="hakunappi">Hae</button>
+        <input type="text" class="search_bar_weather" placeholder="Hae kaupunkia">
+        <button id="hakunappi">Hae</button>
     </div>
-  </div>
-  <div class="weather loading">
+</div>
+<div class="weather loading">
     <h2 class="city">Weather in Helsinki </h2>
     <div class="temp">10°C</div>
 
-    <div class = "flex">
-      <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="icon">
-      <div class="description">Pilvinen</div>
+    <div class="flex">
+        <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="icon">
+        <div class="description">Pilvinen</div>
     </div>
 
     <div class="wind">Tuuli: km/h</div>
-  </div>
+</div>
 </div>
 
 <script src="./js/kartta.js"></script>
