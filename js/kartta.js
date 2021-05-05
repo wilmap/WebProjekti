@@ -1,7 +1,9 @@
-let weathers= [
+let weathersArray= [
     {
         name: 'clear sky',
-        img: src='img/'
+        caption: 'Ehdotus päivälle',
+        img1: src='img/sadesaappaat.jpg',
+        img2: src="img/shortsit.jpg"
     },
     {
         name: 'Huulikiilto',
@@ -57,8 +59,22 @@ let weather = {
 
         if(description.includes('few clouds')){
             console.log('few clouds')
+
         }else if(description.includes('clear sky')){
             console.log('clear sky')
+            let productContainer = document.querySelector(".outfitSuggestion")
+            productContainer.innerHTML = ''
+                productContainer.innerHTML+=
+                    `<article>
+            <figure>
+            <figcaption>${weathersArray[0].caption}</figcaption> 
+                <img src="${weathersArray[0].img1}">
+                <img src="${weathersArray[0].img2}">
+                
+            </figure>
+            </article>`;
+
+
         }else if(description.includes('overcast clouds')){
             console.log('overcast clouds')
         }else if(description.includes('light rain')){
