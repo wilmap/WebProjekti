@@ -42,32 +42,56 @@ let productsInfo = [
     {
         name: 'Harmaat Verryttelyhousut',
         tag: 'harmaatverryttelyhousut',
-        price: 30
+        price: 30,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Pamu Sininen T-Paita',
         tag: 'pamusininent-paita',
-        price: 20
+        price: 20,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Harmaat Lenkkarit',
         tag: 'harmaatlenkkarit',
-        price: 60
+        price: 60,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Pamu Musta T-Paita',
         tag: 'pamumustat-paita',
-        price: 20
+        price: 20,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'HRX Sukat',
         tag: 'hrxsukat',
-        price: 10
+        price: 10,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Jeason Kello',
         tag: 'jeasonkello',
-        price: 120
+        price: 120,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     }
 ]
 
@@ -76,61 +100,117 @@ let productsClothesInfo = [
         name: 'Kukkamekko',
         tag: 'kukkamekko',
         desc: 'Hieno mekko, yms.',
-        price: 40
+        price: 40,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Vaaleansininen Huppari',
         tag: 'vaaleansininenhuppari',
-        price: 120
+        price: 120,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Beige Poncho',
         tag: 'beigeponcho',
-        price: 80
+        price: 80,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Kokouimapuku',
         tag: 'kokouimapuku',
-        price: 32
+        price: 32,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Pitsinen Pitkähihainen Paita',
         tag: 'pitsinenpitkähihainenpaita',
-        price: 21
+        price: 21,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Punainen Haalari',
         tag: 'punainenhaalari',
-        price: 63
+        price: 63,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Harmaa Takki',
         tag: 'harmaatakki',
-        price: 99
+        price: 99,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Sininen Puvuntakki',
         tag: 'sininenpuvuntakki',
-        price: 150
+        price: 150,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Raidallinen T-Paita',
         tag: 'raidallinentpaita',
-        price: 15
+        price: 15,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Vihreä Hame',
         tag: 'vihreähame',
-        price: 45
+        price: 45,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Vaaleanpunainen Mekko',
         tag: 'vaaleanpunainenmekko',
-        price: 66
+        price: 66,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Pystyraidalliset Housut',
         tag: 'pystyraidallisethousut',
-        price: 10
+        price: 10,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Made Kukkapusero',
         tag: 'madekukkapusero',
-        price: 10
+        price: 10,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Oddities Musta T-Paita',
         tag: 'odditiesmustat-paita',
-        price: 10
+        price: 10,
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     }
 ]
 
@@ -139,25 +219,36 @@ let productsMakeupInfo= [
         name: 'Faceroller',
         tag: 'faceroller',
         price: 10,
-        desc: 'Hieno faceroller, yms.',
-        inCart: 0
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Huulikiilto',
         tag: 'huulikiilto',
         price: 10,
-        inCart: 0
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },
     {
         name: 'Puuteri',
         tag: 'puuteri',
         price: 15,
-        inCart: 0
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     },{
         name: 'Seerumi',
         tag: 'seerumi',
         price: 30,
-        inCart: 0
+        desc: '<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt odio eu faucibus </p>' +
+            '<br> <p>scelerisque. Proin vitae nulla scelerisque, vulputate eros ac, sodales turpis. Mauris in nibh <br> </p>' +
+            '<p>interdum, congue augue ac, consectetur erat. Curabitur commodo ornare turpis,</p> ' +
+            '<p><br>cursus gravida augue tempor et. </p>'
     }
 ]
 

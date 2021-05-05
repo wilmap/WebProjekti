@@ -32,29 +32,7 @@ article{
 section {
 
 }
-section .scroll{
-    width: 100%;
-    display: flex;
-}
-section .scroll div{
-    margin-top: 10px;
-    color: #000;
-    font-size: 10px;
-    background: #fff;
-    white-space: nowrap;
-    font-weight: 900;
-    text-transform: uppercase;
-    animation: animate 40s linear infinite;
-}
-@keyframes animate {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
 
-}
 
 .headerFrontpage{
     background: radial-gradient(#fff,#ffd6d7);
@@ -418,11 +396,11 @@ ul{
     justify-content: space-between;
     margin: 100px auto 50px;
 }
-select{
+.select2{
     border: 1px solid #ff523b;
     padding: 5px;
 }
-select:focus{
+.select2:focus{
     outline: none;
 }
 .page-btn{
@@ -741,16 +719,18 @@ input:focus{
 }
 
 .productInfo{
-    width: 45%;
-    display: flex;
     padding: 10px 0;
-    align-items: center;
+
+}
+
+.descInfo{
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .productsInfo{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .imgInfo{
