@@ -61,6 +61,7 @@ h1.temp {
     visibility: hidden;
     max-height: 20px;
     position: relative;
+    overflow: hidden;
 }
 .weather.loading:after {
     visibility: visible;
