@@ -164,14 +164,14 @@ let carts = document.querySelectorAll('.add-cart')
 /* Tarkistetaan mistä ikkunast nappia painetaan, ja sen mukaan
 * käytetään eri listoja, niin saadaan oikeat tuotteet
 * tarkistetaan, onko sivu vaatesivu, kauneussivu vai muu (kaikki tuotteet tällä hetkellä siis */
-if (window.location.pathname === '/Projekti/vaatesivu.html') {
+if (window.location.pathname === '/WebProjekti/vaatesivu.html') {
     for(let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cartNumbers(productsClothes[i])
             totalCost(productsClothes[i])
         })
     }
-}else if(window.location.pathname === '/Projekti/kauneussivu.html'){
+}else if(window.location.pathname === '/WebProjekti/kauneussivu.html'){
     for(let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cartNumbers(productsMakeup[i])
@@ -179,6 +179,7 @@ if (window.location.pathname === '/Projekti/vaatesivu.html') {
         })
     }
 } else{
+    console.log(window.location.pathname)
     for(let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
             cartNumbers(products[i])
