@@ -144,7 +144,6 @@ nav{
 
 .cart{
     float:left;
-
 }
 
 nav ul{
@@ -208,6 +207,7 @@ p{
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
+    width: 100%;
 }
 .col-2 h1{
     font-size: 50px;
@@ -381,6 +381,9 @@ ul{
 }
 .logo{
     width: 50px;
+}
+.logo img{
+    width: 125px;
 }
 
 .app-logo{
