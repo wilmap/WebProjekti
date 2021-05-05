@@ -396,11 +396,11 @@ ul{
     justify-content: space-between;
     margin: 100px auto 50px;
 }
-select{
+.select2{
     border: 1px solid #ff523b;
     padding: 5px;
 }
-select:focus{
+.select2:focus{
     outline: none;
 }
 .page-btn{
@@ -719,16 +719,18 @@ input:focus{
 }
 
 .productInfo{
-    width: 45%;
-    display: flex;
     padding: 10px 0;
-    align-items: center;
+
+}
+
+.descInfo{
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .productsInfo{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .imgInfo{
