@@ -10,134 +10,136 @@
 <!-- Tästä alkaa "navigaatio koodi" -->
 
 <div class="header">
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <img src="img/logo.png" width="125px" alt="store logo">
-      </div>
-      <nav>
-        <ul id="MenuItems">
-          <div class="dropdown">
-            <button class="dropbutton">Tuotteet
-              <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-              <a href="tuotteet.html" >Kaikki tuotteet</a>
-              <a href="vaatesivu.html" >Vaatteet</a>
-              <a href="kauneussivu.html" >Kauneus</a>
-              <a href="sisustussivu.html" >Sisustus</a>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125px" alt="store logo">
             </div>
-          </div>
-          <li><a href="etusivu.html">Etusivu</a></li>
-          <li><a href="ehdotukset.html">Ehdotukset</a></li>
-          <li><a href="kartta.html">Kartta</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          <li><a href="tili.html">Tili</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li class="cart">
-          <a href="ostoskori.html">
-            <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
-          </a>
+            <nav>
+                <ul id="MenuItems">
+                    <div class="dropdown">
+                        <button class="dropbutton">Tuotteet
+                            <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="tuotteet.html">Kaikki tuotteet</a>
+                            <a href="vaatesivu.html">Vaatteet</a>
+                            <a href="kauneussivu.html">Kauneus</a>
+                            <a href="sisustussivu.html">Sisustus</a>
+                        </div>
+                    </div>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href="ehdotukset.html">Ehdotukset</a></li>
+                    <li><a href="kartta.html">Kartta</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    <li><a href="tili.html">Tili</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li class="cart">
+                    <a href="ostoskori.html">
+                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                    </a>
 
-        </li>
-      </ul>
-      <img src="img/menu.png" class="menu-icon" alt=""
-           onclick="menutoggle()">
+                </li>
+            </ul>
+            <img src="img/menu.png" class="menu-icon" alt=""
+                 onclick="menutoggle()">
+        </div>
     </div>
-  </div>
 </div>
 <!-- Tästä loppuu "navigaatio koodi" -->
 
 <!-- lomake-->
 <div class="container1">
-  <div style="text-align:center">
-    <h2>Ota meihin yhteyttä</h2><br>
-    <p>Lähetä meille viesti (palautukset, palaute, muut asiat):</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="img/kirjoita.jpg" style="width:100%">
+    <div style="text-align:center">
+        <h2>Ota meihin yhteyttä</h2><br>
+        <p>Lähetä meille viesti (palautukset, palaute, muut asiat):</p>
     </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">Etunimi:</label>
-        <input type="text" id="fname" name="etunimi" placeholder="Nimesi..">
-        <label for="lname">Sukunimi</label>
-        <input type="text" id="lname" name="sukunimi" placeholder="Sukunimesi..">
-        <label for="country">Maa</label>
-        <select id="country" name="Maa">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          <option value="suomi">Suomi</option>
-          <option value="ruotsi">Ruotsi</option>
-          <option value="norja">Norja</option>
-        </select>
-        <label for="subject">Viesti</label>
-        <textarea id="subject" name="subject" placeholder="Kirjoita jotain.." style="height:170px"></textarea>
-        <input class="btnsend "type="button" value="Lähetä" onClick="alert('Viestisi on lähetetty!'); return true">
+    <div class="row">
+        <div class="column">
+            <img src="img/kirjoita.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">Etunimi:</label>
+                <input type="text" id="fname" name="etunimi" placeholder="Nimesi..">
+                <label for="lname">Sukunimi</label>
+                <input type="text" id="lname" name="sukunimi" placeholder="Sukunimesi..">
+                <label for="country">Maa</label>
+                <select id="country" name="Maa">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="suomi">Suomi</option>
+                    <option value="ruotsi">Ruotsi</option>
+                    <option value="norja">Norja</option>
+                </select>
+                <label for="subject">Viesti</label>
+                <textarea id="subject" name="subject" placeholder="Kirjoita jotain.." style="height:170px"></textarea>
+                <input class="btnsend " type="button" value="Lähetä"
+                       onClick="alert('Viestisi on lähetetty!'); return true">
 
-      </form>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
 
+<!-- Yritystiedot ja linkki videon taustatyöhön -->
 <div class="container1">
-<h2>Yritystiedot</h2><br>
-  <p>RedStore Oy</p>
-  <p>Aleksanterinkatu 123, 00100 Helsinki (toimiston osoite)</p>
-  <p>Email: redstore@gmail.com</p>
-  <p>Puhelimitse: 023846289</p>
-  <p>Y-tunnus 10808545424-8</p>
-  <br>
-  <h2>Linkki etusivun videon taustatyöhön</h2>
-  <div style="text-align:center">
-  <a class="keskitys" href="http://users.metropolia.fi/~hennaeko/Videotaustatyo/">Videon taustatyö</a>
-  </div>
+    <h2>Yritystiedot</h2><br>
+    <p>RedStore Oy</p>
+    <p>Aleksanterinkatu 123, 00100 Helsinki (toimiston osoite)</p>
+    <p>Email: redstore@gmail.com</p>
+    <p>Puhelimitse: 023846289</p>
+    <p>Y-tunnus 10808545424-8</p>
+    <br>
+    <h2>Linkki etusivun videon taustatyöhön</h2>
+    <div style="text-align:center">
+        <a class="keskitys" href="http://users.metropolia.fi/~hennaeko/Videotaustatyo/">Videon taustatyö</a>
+    </div>
 
 </div>
 
 
 <!-- footer -->
 <div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col-1">
-        <h3>Lataa bla bla sovellus</h3>
-        <p>Lataa sovellus Apple tai Play Storesta</p>
-        <div class="app-logo">
-          <img src="img/play-store.png">
-          <img src="img/app-store.png">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Lataa bla bla sovellus</h3>
+                <p>Lataa sovellus Apple tai Play Storesta</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo-white.png" alt="">
+                <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+                    sem ut iaculis vulputate.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Lisää meistä</h3>
+                <ul>
+                    <li>Kupongit</li>
+                    <li>Blogi</li>
+                    <li>Palautusoikeudet</li>
+                    <li>Hyväntekeväisyys</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Seuraa meitä somessa</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="footer-col-2">
-        <img src="img/logo-white.png" alt="">
-        <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
-          sem ut iaculis vulputate.</p>
-      </div>
-      <div class="footer-col-3">
-        <h3>Lisää meistä</h3>
-        <ul>
-          <li>Kupongit</li>
-          <li>Blogi</li>
-          <li>Palautusoikeudet</li>
-          <li>Hyväntekeväisyys</li>
-        </ul>
-      </div>
-      <div class="footer-col-4">
-        <h3>Seuraa meitä somessa</h3>
-        <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-          <li>Youtube</li>
-        </ul>
-      </div>
+        <hr>
+        <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
     </div>
-    <hr>
-    <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
-  </div>
 </div>
 
 <script src="js/ostoskori.js"></script>
