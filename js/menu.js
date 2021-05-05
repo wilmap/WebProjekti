@@ -1,3 +1,5 @@
+/* Simppeli js, jonka avulla navigaattorin itemit voidaan piilottaa sen mennessä liian pieneksi */
+
 let MenuItems = document.getElementById("MenuItems");
 
 MenuItems.style.maxHeight = "0px";

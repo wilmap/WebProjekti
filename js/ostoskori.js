@@ -1,5 +1,9 @@
+/* Ostoskorin.js */
 
 /* Lista tuotteista, joita ostoskoriin pystyy lähettämään */
+/* Jokaisella sivulla on oma lista, ja järjestyksessä katsotaan minkä tuotteen
+* tiedot lähetetään ostoskoriin */
+
 let products = [
     {
         name: 'Pamu Punainen T-Paita',
@@ -153,13 +157,13 @@ let productsMakeup= [
     }
     ]
 
-
-/* Napin painalluksesta tee nämä funktiot */
-
+/* Asetetaan koriin lisäys nappi */
 let carts = document.querySelectorAll('.add-cart')
 
 
-
+/* Tarkistetaan mistä ikkunast nappia painetaan, ja sen mukaan
+* käytetään eri listoja, niin saadaan oikeat tuotteet
+* tarkistetaan, onko sivu vaatesivu, kauneussivu vai muu (kaikki tuotteet tällä hetkellä siis */
 if (window.location.pathname === '/Projekti/vaatesivu.html') {
     for(let i=0; i < carts.length; i++) {
         carts[i].addEventListener('click', () => {
@@ -184,7 +188,7 @@ if (window.location.pathname === '/Projekti/vaatesivu.html') {
 }
 
 
-/*------- Animaatio -------*/
+/*------- Animaatio ostoskoriin lisäykselle -------*/
 
 carts.forEach(button =>{
    button.addEventListener('click', cartClick)
@@ -204,7 +208,7 @@ function onLoadCartNumbers(){
     }
 }
 
-/* Päivittää korissa olevien tuotteiden määrää */
+/* Päivittää korissa olevien tuotteiden määrää niiden vähentyessä tai lisääntyessä */
 
 function cartNumbers(product, action){
     let productNumbers = localStorage.getItem('cartNumbers')
@@ -222,7 +226,7 @@ function cartNumbers(product, action){
     setItems(product)
 }
 
-/* Asettaa tuotteet tietoihin */
+/* Asettaa tuotteet tietoihin ja paikalliseen varastoon, niin ne saadaan muiltakin sivuilta */
 
 function setItems(product){
 
@@ -263,7 +267,9 @@ function totalCost(product, action){
     }
 }
 
-/* päivittää sivun riippuen poistetaanko sieltä vai lisätäänkö sinne */
+/* päivittää sivun riippuen poistetaanko sieltä vai lisätäänkö sinne
+* asettaa listan mukaan kuvan ja tekstit
+*/
 
 function displayCart(){
     let cartCost = localStorage.getItem('totalCost')
@@ -305,7 +311,8 @@ function displayCart(){
     manageQuantity()
 }
 
-/* funktio poistamisnapille, joka vähentää tietyn tuotteen sen parentelementin mukaan */
+/* funktio poistamisnapille, joka vähentää tietyn tuotteen
+ 'poistamisikonin' parentelementin mukaan */
 
 function deleteButtons(){
     let deleteButtons = document.querySelectorAll('.product .cartIconRemove')
@@ -332,7 +339,7 @@ function deleteButtons(){
     }
 }
 
-/* funktio lisäys ja vähennys näpeille, jälleen käytetään apuna parentelementtiä */
+/* funktio lisäys ja vähennys napeille, jälleen käytetään apuna parentelementtiä */
 
 function manageQuantity(){
     let decreaseButtons = document.querySelectorAll('.fa-arrow-circle-left')
