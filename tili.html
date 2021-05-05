@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <title>Tili</title>
     <link rel="stylesheet" href="css/tili.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=
+    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <!-- Tästä alkaa "navigaatio koodi" -->
 
-<div class="header">
+<div class="headerFrontpage">
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -44,6 +49,7 @@
             </ul>
             <img src="img/menu.png" class="menu-icon" alt=""
                  onclick="menutoggle()">
+
         </div>
     </div>
 </div>
@@ -54,7 +60,7 @@
 <h2>Kirjaudu sisään tilillesi</h2>
 <br>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button id="button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id01" class="modal">
 
@@ -75,7 +81,7 @@
                 <input type="password" placeholder="Kirjoita salasana" name="psw" required>
             </label>
 
-            <button type="submit">Login</button>
+            <button id="button1" type="submit">Login</button>
 
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Muista minut
@@ -92,7 +98,9 @@
 </div>
 <br>
 <br>
-<img class="kuva1" src="img/kelly-sikkema-LNlzd-Y7orw-unsplash.jpg" alt="Kuva puhelimesta">
+<video width="320" height="240" controls autoplay muted loop>
+    <source src="videos/nettisivuvideo.mp4" type="video/mp4">
+</video>
 
 <!-- footer -->
 <div class="footer">

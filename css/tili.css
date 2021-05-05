@@ -3,17 +3,85 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Poppins', sans-serif;
+    padding-top: 65px;
     text-align: center;
+
+}
+video {
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Tähän voi muuttaa domii */
+article{
+    width: 50%;
+    padding: 30px;
+}
+.dompic {
+    flex-basis: 100%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dompic img{
+    width: 100%;
+    height: 480px;
+}
+
+section {
+
+}
+section .scroll{
+    width: 100%;
+    display: flex;
+}
+section .scroll div{
+    margin-top: 10px;
+    color: #000;
+    font-size: 10px;
+    background: #fff;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+.headerFrontpage{
+    background: radial-gradient(#fff,#fff);
 }
 
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+
 }
+
 .header .row{
     margin-top: 70px;
+
+}
+
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #555555;
+    font-weight: bold;
 }
 
 .dropbutton {
@@ -64,12 +132,21 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
-
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 nav{
     flex: 1;
     text-align: right;
+}
+.cart{
+    float:left;
+
 }
 
 nav ul{
@@ -105,7 +182,7 @@ p{
     width: 60px;
 }
 
-.container{
+.container, .products-container{
     max-width: 1300px;
     margin: auto;
     padding-left: 25px;
@@ -117,8 +194,12 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
-
-
+.image-container {
+    position: relative;
+}
+.imageCont{
+    width: 100%;
+}
 .row{
     display: flex;
     align-items: center;
@@ -405,62 +486,154 @@ input:focus{
     cursor: pointer;
 }
 
-/*----------- ostoskori --------------*/
+/*---------- ostoskori ----------*/
 
-.cart-page{
-    margin: 80px auto;
+
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 50px auto 0;
 }
-table{
+
+.cartIconRemove{
+    color: #d03838;
+
+}
+.cartIcons{
+    color: #e38ea8;
+    padding: 10px;
+}
+
+.product-header{
     width: 100%;
-    border-collapse: collapse;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
 }
-.cart-info{
+
+.product-title{
+    width: 45%;
+}
+.price{
+    border-bottom: 1px solid lightgrey;
+    width: 15%;
+    align-items: center;
+    display: flex;
+}
+
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.infoPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 110px;
+    padding-left: 40px;
+}
+
+.infoQuantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 160px;
+}
+
+.infoTotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    position: relative;
+    left: 170px;
+}
+
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width: 45%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+
+.products{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-th{
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    background: #d5a39b;
-    font-weight: normal;
+
+.products img{
+    width: 75px;
 }
-td{
-    padding: 10px 5px;
-}
-td input {
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-}
-td a {
-    color: #ff523b;
-    font-size: 12px;
-}
-td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-.total-price{
+
+.basketTotalContainer{
     display: flex;
     justify-content: flex-end;
-}
-.total-price table{
-    border-top: 3px solid #ff523b;
     width: 100%;
-    max-width: 380px;
-}
-td:last-child{
-    text-align: right;
-}
-th:last-child{
-    text-align: right;
+    padding: 10px 0;
 }
 
+.basketTotalTitle{
+    width: 20%
+}
 
+.basketTotal{
+    width: 5%;
+}
 
-/*---------dddd  ---------*/
+.cartName{
+    opacity: 1;
+}
+
+/* Tuotetiedot */
+
+.products-containerInfo{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 50px auto 0;
+}
+
+.productInfo{
+    width: 45%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.productsInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgInfo{
+    width: 300px;
+}
+
+.nameInfo{
+    font-weight: bold;
+}
+
+/*---------Slider  ---------*/
 
 
 
@@ -564,9 +737,6 @@ th:last-child{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #40D3CD;
 }
-* {
-    box-sizing: border-box;
-}
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -634,6 +804,15 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
+    background-color: black;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#button1 {
     background-color: #e285d5;
     color: white;
     padding: 14px 20px;
