@@ -51,17 +51,138 @@ let products = [
     }
 ]
 
+let productsClothes= [
+    {
+        name: 'Kukkamekko',
+        tag: 'kukkamekko',
+        price: 39,
+        inCart: 0
+    },
+    {
+        name: 'Vaaleansininen Huppari',
+        tag: 'vaaleansininenhuppari',
+        price: 20,
+        inCart: 0
+    },
+    {
+        name: 'Beige Poncho',
+        tag: 'beigeponcho',
+        price: 80,
+        inCart: 0
+    },{
+        name: 'Kokouimapuku',
+        tag: 'kokouimapuku',
+        price: 32,
+        inCart: 0
+    },{
+        name: 'Pitsinen Pitkähihainen Paita',
+        tag: 'pitsinenpitkähihainenpaita',
+        price: 21,
+        inCart: 0
+    },{
+        name: 'Punainen Haalari',
+        tag: 'punainenhaalari',
+        price: 63,
+        inCart: 0
+    },{
+        name: 'Harmaa Takki',
+        tag: 'harmaatakki',
+        price: 99,
+        inCart: 0
+    },{
+        name: 'Sininen Puvuntakki',
+        tag: 'sininenpuvuntakki',
+        price: 150,
+        inCart: 0
+    },{
+        name: 'Raidallinen T-Paita',
+        tag: 'raidallinentpaita',
+        price: 15,
+        inCart: 0
+    },{
+        name: 'Vihreä Hame',
+        tag: 'vihreähame',
+        price: 45,
+        inCart: 0
+    },{
+        name: 'Vaaleanpunainen Mekko',
+        tag: 'vaaleanpunainenmekko',
+        price: 66,
+        inCart: 0
+    },{
+        name: 'Pystyraidalliset Housut',
+        tag: 'pystyraidallisethousut',
+        price: 10,
+        inCart: 0
+    },{
+        name: 'Made Kukkapusero',
+        tag: 'madekukkapusero',
+        price: 10,
+        inCart: 0
+    },{
+        name: 'Oddities Musta T-Paita',
+        tag: 'odditiesmustat-paita',
+        price: 10,
+        inCart: 0
+    }
+]
+
+let productsMakeup= [
+    {
+        name: 'Faceroller',
+        tag: 'faceroller',
+        price: 10,
+        inCart: 0
+    },
+    {
+        name: 'Huulikiilto',
+        tag: 'huulikiilto',
+        price: 10,
+        inCart: 0
+    },
+    {
+        name: 'Puuteri',
+        tag: 'puuteri',
+        price: 15,
+        inCart: 0
+    },{
+        name: 'Seerumi',
+        tag: 'seerumi',
+        price: 30,
+        inCart: 0
+    }
+    ]
+
 
 /* Napin painalluksesta tee nämä funktiot */
 
 let carts = document.querySelectorAll('.add-cart')
 
-for(let i=0; i < carts.length; i++){
-    carts[i].addEventListener('click', () => {
-        cartNumbers(products[i])
-        totalCost(products[i])
-    })
+
+
+if (window.location.pathname === '/Projekti/vaatesivu.html') {
+    for(let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cartNumbers(productsClothes[i])
+            totalCost(productsClothes[i])
+        })
+    }
+}else if(window.location.pathname === '/Projekti/kauneussivu.html'){
+    for(let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cartNumbers(productsMakeup[i])
+            totalCost(productsMakeup[i])
+        })
+    }
+} else{
+    for(let i=0; i < carts.length; i++) {
+        carts[i].addEventListener('click', () => {
+            cartNumbers(products[i])
+            totalCost(products[i])
+        })
+    }
 }
+
 
 /*------- Animaatio -------*/
 

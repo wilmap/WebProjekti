@@ -29,10 +29,10 @@ const picArray = [
 
 const mainElement = document.querySelector("main");
 
-let htmlCode = ``;
-
+let productContainer = document.querySelector(".col-4")
+productContainer.innerHTML = ''
 for (let i= 0; i < picArray.length; i++){
-  htmlCode +=
+  productContainer.innerHTML+=
       `<article>
             <figure>
                 <img src="${picArray[i].filename}">
@@ -41,5 +41,3 @@ for (let i= 0; i < picArray.length; i++){
             <p>${picArray[i].description}</p>
         </article>`;
 }
-
-mainElement.innerHTML = htmlCode;
