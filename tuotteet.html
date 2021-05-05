@@ -1,35 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="fi">
 <head>
   <meta charset="UTF-8">
   <title>Kaikki tuotteet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=
-    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet--->
-  <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tämä sivusto antaa mahdollisuuden käyttää eri logoja (esim. mun käyttämät tähdet-->
+  <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<section>
-  <div class="scroll text1">
-    <div>
-      Kevätale <span> on </span>nyt <span>
-      täällä! - </span>Naisten <span>
-      muoti - </span>-20% <span>
-       <br></span>
-    </div>
-    <div>
-      Kevätale <span> on </span>nyt <span>
-      täällä! - </span>Naisten <span>
-      muoti - </span>-20% <span>
-       - </span>
-    </div>
-  </div>
-</section>
 
 
 <!-- Header -->
@@ -37,11 +20,11 @@
   <div class="container">
     <div class="navbar">
       <div class="logo">
-        <img src="img/logo.png" width="125px" alt="store logo">
+        <img src="img/logo.png" alt="store logo">
       </div>
       <nav>
 
-        <ul id="MenuItems">
+
           <div class="dropdown">
             <button class="dropbutton">Tuotteet
               <i class="fa fa-caret-down"></i></button>
@@ -52,6 +35,7 @@
               <a href="sisustussivu.html" >Sisustus</a>
             </div>
           </div>
+        <ul id="MenuItems">
           <li><a href="etusivu.html">Etusivu</a></li>
           <li><a href="ehdotukset.html">Ehdotukset</a></li>
           <li><a href="kartta.html">Kartta</a></li>
@@ -62,9 +46,8 @@
       <ul>
       <li class="cart">
         <a href="ostoskori.html">
-          <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+          <img src="img/cart.png" alt="" id="ostoskuva"><span>0</span>
         </a>
-
       </li>
       </ul>
       <img src="img/menu.png" class="menu-icon" alt=""
@@ -73,7 +56,7 @@
   </div>
 </div>
 
-<!--- Tästä alkaa container ---->
+<!-- Tästä alkaa container -->
 
 <div class="small-container">
   <div class="row row-2">
@@ -87,7 +70,7 @@
     </select>
   </div>
 
-  <!---- Tästä alkaa tuotteet ----->
+  <!-- Tästä alkaa tuotteet -->
 
 <div class="row">
   <div class="col-4">
@@ -260,7 +243,7 @@
 </div>
 
 
-<!-------- Footer --------->
+<!-- Footer -->
 <div class="footer">
   <div class="container">
     <div class="row">
@@ -268,8 +251,8 @@
         <h3>Lataa sovellukset</h3>
         <p>Lataa sovellus Apple tai Play Storesta</p>
         <div class="app-logo">
-          <img src="img/play-store.png">
-          <img src="img/app-store.png">
+          <img src="img/play-store.png" alt="play storen logo">
+          <img src="img/app-store.png" alt="apple storen logo">
         </div>
       </div>
       <div class="footer-col-2">
@@ -300,7 +283,7 @@
     <p class="copyright">&#169; Copyright 2021 - Shopzilla Oy</p>
   </div>
 </div>
-<!--- js for toggle menu --->
+<!-- js for toggle menu -->
 <script src="js/ostoskori.js"></script>
 <script src="js/tuotetiedot.js"></script>
 <script src="js/menu.js"></script>
