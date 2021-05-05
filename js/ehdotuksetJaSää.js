@@ -1,3 +1,5 @@
+/* Lista kaikille eri säiden asuehdotuksille */
+
 let weathersArray= [
     {
         description: 'Päivä on kirkas ja aurinkoinen. Muista vesipullo!',
@@ -86,32 +88,29 @@ let weather = {
         document.querySelector(".wind").innerText = "Wind speed: " + speed.toFixed() + "km/h";
         document.querySelector(".weather").classList.remove("loading");
 
-
+        /* if else pyramidi, jossa tarkistetaan mikä sää on ja annetaan kuvat ja kuvaus sen mukaan */
         if(description.includes('few clouds')){
             console.log('few clouds')
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[1].img1}">
                 <img class="clothingImg" src="${weathersArray[1].img2}">
                 <img class="clothingImg" src="${weathersArray[1].img3}">
-                
                 <p>${weathersArray[1].description}</p>
-                </div>
             `;
-
         }else if(description.includes('clear sky')){
             console.log('clear sky')
             productContainer.innerHTML = ''
                 productContainer.innerHTML+=
-                    `<div></div>
+                    `
                 <img class="clothingImg" src="${weathersArray[0].img1}">
                 <img class="clothingImg" src="${weathersArray[0].img2}">
                 <img class="clothingImg" src="${weathersArray[0].img3}">
                 <img class="clothingImg" src="${weathersArray[0].img4}">
                 
                 <p>${weathersArray[0].description}</p>
-                </div>
+                
             `;
 
 
@@ -124,7 +123,7 @@ let weather = {
                 <img class="clothingImg" src="${weathersArray[2].img2}">
                 <img class="clothingImg" src="${weathersArray[2].img3}">
                 <p>${weathersArray[2].description}</p>
-                </div>
+                
             `;
 
 
@@ -133,23 +132,23 @@ let weather = {
 
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[3].img1}">
                 <img class="clothingImg" src="${weathersArray[3].img2}">
                 <img class="clothingImg" src="${weathersArray[3].img3}">
                 <p>${weathersArray[3].description}</p>
-                </div>
+                
             `;
 
         }else if(description.includes('scattered clouds')){
             console.log('scattered clouds')
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[4].img1}">
                 <img class="clothingImg" src="${weathersArray[4].img2}">
                 <p>${weathersArray[4].description}</p>
-                </div>
+                
             `;
 
         }else if(description.includes('rain')){
@@ -157,39 +156,39 @@ let weather = {
 
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[5].img1}">
                 <img class="clothingImg" src="${weathersArray[5].img2}">
                 <img class="clothingImg" src="${weathersArray[5].img3}">
                 <img class="clothingImg" src="${weathersArray[5].img4}">
                 <p>${weathersArray[5].description}</p>
-                </div>
+                
             `;
 
         }else if(description.includes('thunderstorm')){
             console.log('thunderstorm')
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[6].img1}">
                 <img class="clothingImg" src="${weathersArray[6].img2}">
                 <img class="clothingImg" src="${weathersArray[6].img3}">
                 <img class="clothingImg" src="${weathersArray[6].img4}">
                 <p>${weathersArray[6].description}</p>
-                </div>
+                
             `;
 
         }else if(description.includes('snow')){
             console.log('snow')
             productContainer.innerHTML = ''
             productContainer.innerHTML+=
-                `<div></div>
+                `
                 <img class="clothingImg" src="${weathersArray[7].img1}">
                 <img class="clothingImg" src="${weathersArray[7].img2}">
                 <img class="clothingImg" src="${weathersArray[7].img3}">
                 <img class="clothingImg" src="${weathersArray[7].img4}">
                 <p>${weathersArray[7].description}</p>
-                </div>
+                
             `;
 
         }else if(description.includes('mist')){
