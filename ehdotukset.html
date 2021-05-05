@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ehdotukset</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Kartta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/kartta.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=
+      Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Tästä alkaa "navigaatio koodi" -->
-<div class="header">
+<div class="headerFrontpage">
   <div class="container">
     <div class="navbar">
       <div class="logo">
@@ -20,10 +24,10 @@
             <button class="dropbutton">Tuotteet
               <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content">
-              <a href="tuotteet.html" >Kaikki tuotteet</a>
-              <a href="vaatesivu.html" >Vaatteet</a>
-              <a href="kauneussivu.html" >Kauneus</a>
-              <a href="sisustussivu.html" >Sisustus</a>
+              <a href="tuotteet.html">Kaikki tuotteet</a>
+              <a href="vaatesivu.html">Vaatteet</a>
+              <a href="kauneussivu.html">Kauneus</a>
+              <a href="sisustussivu.html">Sisustus</a>
             </div>
           </div>
           <li><a href="etusivu.html">Etusivu</a></li>
@@ -38,16 +42,186 @@
           <a href="ostoskori.html">
             <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
           </a>
+
         </li>
       </ul>
       <img src="img/menu.png" class="menu-icon" alt=""
            onclick="menutoggle()">
     </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>Mitä tänään laitettaisiin päälle?</h1>
+        <p>Laita kaupunkisi alla olevaan hakukenttään, niin FashionBottimme antaa parhaan<br>
+          mahdollisen asuehdotuksen!
+        </p>
+      </div>
+      <div class="col-2">
+        <img src="img/tuolit.jpeg" width="100%">
+      </div>
+    </div>
   </div>
 </div>
+</div>
+</div>
 <!-- Tästä loppuu "navigaatio koodi" -->
+
+<!--Tästä alkaa sään koodi-->
+
+<div class="card">
+  <div class="search_weather">
+    <input type="text" class="search_bar_weather" placeholder="Hae kaupunkia">
+    <label>
+      <button id="hakunappi">Hae</button>
+    </label>
+  </div>
+</div>
+<br>
+<div class="weather loading">
+  <h2 class="city">Weather in Helsinki </h2>
+  <div class="temp">10°C</div>
+
+  <div class="flex">
+    <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="icon">
+    <div class="description">Pilvinen</div>
+  </div>
+
+  <div class="wind">Tuuli: km/h</div>
+
+  <div class="small-container">
+    <h2 class="title">Ehdotukset päivälle</h2>
+    <div class="row">
+      <main class="outfitSuggestion">
+        <!-- add articles here -->
+      </main>
+
+    </div>
+  </div>
+</div>
+<br>
+
+<!--- testimonial --->
+<div class="testimonial">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p> Ihana sivusto! Vastaa täysin odotuksiani ja rakastan sivustolla olevia tuotteita.
+          On niin helppoa lisätä tuotteet ostoskoriin ja tietää paljonko tuotteet maksaisivat.
+
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <img src="img/user-1.png" alt="asiakkaan kuva">
+        <h3>Minna Leppänen</h3>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p> Tyylikäs sivusto, oikeen ostohimoni heräävät!
+          Pisteitä nopeasta yhteydenotosta ja mukavasta asiakaspalvelusta.
+          Minulla ei ole mitään pahaa sanottavaa. Suosittelen kaikille täällä shoppailua.
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <img src="img/user-2.png" alt="asiakkaan kuva">
+        <h3>Kari Koski</h3>
+      </div>
+      <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <p> Ihania vaatteita ja kodin sisustustuotteita. Sivu on luotettava ja tuotteita on helppo selata.
+          Nettikaupassa on usein hyviä tarjouksia, käyn sivustolla jatkossakin.
+        </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <img src="img/user-3.png" alt="asiakkaan kuva">
+        <h3>Leena Hakkarainen</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--- merkit --->
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="img/logo-patagonia.png" alt="logo">
+      </div>
+      <div class="col-5">
+        <img src="img/logo-oppo.png" alt="logo">
+      </div>
+      <div class="col-5">
+        <img src="img/logo-coca-cola.png" alt="logo">
+      </div>
+      <div class="col-5">
+        <img src="img/logo-paypal.png" alt="logo">
+      </div>
+      <div class="col-5">
+        <img src="img/logo-philips.png" alt="logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------- Footer --------->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Lataa bla bla sovellus</h3>
+        <p>Lataa sovellus Apple tai Play Storesta</p>
+        <div class="app-logo">
+          <img src="img/play-store.png" alt="kuva">
+          <img src="img/app-store.png" alt="kuva">
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="img/logo-white.png" alt="">
+        <p>Maecenas ac augue non justo fermentum consequat et a felis. Cras posuere
+          sem ut iaculis vulputate.</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Lisää meistä</h3>
+        <ul>
+          <li>Kupongit</li>
+          <li>Blogi</li>
+          <li>Palautusoikeudet</li>
+          <li>Hyväntekeväisyys</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Seuraa meitä somessa</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&#169; Copyright 2021 - Bla bla store</p>
+  </div>
+</div>
+
+<script src="js/ehdotuksetJaSää.js"></script>
 <script src="js/ostoskori.js"></script>
-<script src="js/etusivu.js"></script>
+<script src="js/menu.js"></script>
 
 </body>
 </html>
