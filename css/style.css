@@ -8,6 +8,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     padding-top: 65px;
+    background: radial-gradient(#fff,#ffd6d7);
 
 }
 /* Tähän voi muuttaa domii */
@@ -183,12 +184,17 @@ p{
 
 .image-container {
     position: relative;
+    margin-bottom: 30px;
+    max-width: 1080px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
 }
 .small-container {
     max-width: 1080px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 50px;
+    background-color: white;
 }
 .imageCont{
     width: 100%;
