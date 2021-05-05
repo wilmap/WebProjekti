@@ -5,9 +5,9 @@
     <title>Tili</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=
-    Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <!-- Jos alla oleva linkki antaa errorin, paina alt enter ja valitse "download"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,20 +18,20 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="img/logo.png" width="125px" alt="store logo">
+                <img src="img/logo.png" alt="store logo">
             </div>
             <nav>
-                <ul id="MenuItems">
-                    <div class="dropdown">
-                        <button class="dropbutton">Tuotteet
-                            <i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="tuotteet.html">Kaikki tuotteet</a>
-                            <a href="vaatesivu.html">Vaatteet</a>
-                            <a href="kauneussivu.html">Kauneus</a>
-                            <a href="sisustussivu.html">Sisustus</a>
-                        </div>
+                <div class="dropdown">
+                    <button class="dropbutton">Tuotteet
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="tuotteet.html">Kaikki tuotteet</a>
+                        <a href="vaatesivu.html">Vaatteet</a>
+                        <a href="kauneussivu.html">Kauneus</a>
+                        <a href="sisustussivu.html">Sisustus</a>
                     </div>
+                </div>
+                <ul id="MenuItems">
                     <li><a href="etusivu.html">Etusivu</a></li>
                     <li><a href="ehdotukset.html">Ehdotukset</a></li>
                     <li><a href="kartta.html">Kartta</a></li>
@@ -42,7 +42,7 @@
             <ul>
                 <li class="cart">
                     <a href="ostoskori.html">
-                        <img src="img/cart.png" alt="" width=30px" height="30px"><span>0</span>
+                        <img id="ostoskuva" src="img/cart.png" alt=""><span>0</span>
                     </a>
 
                 </li>
@@ -102,7 +102,7 @@
     <source src="videos/nettisivuvideo.mp4" type="video/mp4">
 </video>
 
-<!-------- Footer --------->
+<!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -110,13 +110,14 @@
                 <h3>Lataa sovellukset</h3>
                 <p>Lataa sovellus Apple tai Play Storesta</p>
                 <div class="app-logo">
-                    <img src="img/play-store.png">
-                    <img src="img/app-store.png">
+                    <img src="img/play-store.png" alt="">
+                    <img src="img/app-store.png" alt="">
                 </div>
             </div>
             <div class="footer-col-2">
                 <img src="img/logo-white.png" alt="">
-                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä sivustoa,<br>
+                <p>Pidätämme oikeuden muuttaa näitä ehtoja milloin tahansa, joten aina kun käyttäjä käyttää tätä
+                    sivustoa,<br>
                     hänen tulee tarkistaa näihin ehtoihin tehdyt muutokset.</p>
             </div>
             <div class="footer-col-3">
@@ -145,15 +146,15 @@
 
 <script>
 
-  // Get the modal
-  const modal = document.getElementById('id01');
+    // Get the modal
+    const modal = document.getElementById('id01');
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  };
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
 </script>
 <script src="js/menu.js"></script>
 
